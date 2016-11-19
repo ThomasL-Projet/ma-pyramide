@@ -1,0 +1,2858 @@
+/*-------------------------
+	Button Pictogram Fonts
+--------------------------*/
+@font-face {
+    font-family: 'EntypoRegular';
+    src: url('../font/entypo-webfont.eot');
+    src: url('../font/entypo-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../font/entypo-webfont.woff') format('woff'),
+         url('../font/entypo-webfont.ttf') format('truetype'),
+         url('../font/entypo-webfont.svg#EntypoRegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/*-------------------------
+	Simple reset
+--------------------------*/
+
+*{
+	margin:0;
+	padding:0;
+}
+
+/*-------------------------
+	General Styles
+--------------------------*/
+
+html{
+	background:url('../img/bg-stripe-body-1x1247.png') repeat-x center top #BFCE64;
+}
+
+body{
+	color:#434543;
+	font:16px/1.3 Corbel,'Segoe UI',Arial, sans-serif;
+	min-height: 930px;
+	overflow: auto;
+}
+
+a, a:visited {
+	text-decoration:none;
+	outline:none;
+	color:#000000;
+}
+
+a:hover{
+	text-decoration:underline;
+}
+
+/*----------------------------
+	Headers
+-----------------------------*/
+
+header{
+	display: block;
+	height: 230px;
+	padding: 10px;
+	margin-left: auto;
+	margin-right: auto;
+	min-width: 1080px;
+}
+
+header #nomEtLogo {
+	display: block;
+	position: relative;
+	width: 758px;
+	margin-left: auto;
+	margin-right: auto;
+	padding-right: 300px;
+}
+
+#AGD-logo{
+	background: url('../img/AGD-128.png') no-repeat left center;
+	height: 128px;
+	width: 128px;
+	margin-left: auto;
+	margin-right: auto;
+	position: relative;
+	overflow: hidden;
+	text-align: center;
+	text-indent: -99999px;
+	float: left;
+}
+
+#NomSite{
+	background: url('../img/NomSite.png') no-repeat left center;
+	height: 128px;
+	width: 580px;
+	margin: 15px 15px;
+	text-align: center;
+	text-indent: -99999px;
+	position: relative;
+	margin-left: auto;
+	margin-right: auto;
+	float: right;
+}
+
+.button {
+  font-family: Corbel, Arial, Helvetica, sans-serif;
+  font-size: 13px;
+  color: #fff;
+  text-decoration: none;
+  display: inline-block;
+  text-align: center;
+  padding: 7px 20px 9px;
+  margin: .5em .5em .5em 0;
+  cursor: pointer;
+  text-shadow: 0 1px 1px rgba(0,0,0,0.4);
+  -webkit-transition: 0.1s linear;
+  -moz-transition: 0.1s linear;
+  -ms-transition: 0.1s linear;
+  -o-transition: 0.1s linear;
+  transition: 0.1s linear;
+}
+
+/*----------------------------
+	admin bar
+-----------------------------*/
+div.menu3
+{
+	width: 765px;
+	font-size: 0;
+	height: 25px;
+	position: relative;
+	margin: -9px auto -10px auto;    
+}
+
+div.menu3 a
+{
+    display: inline-block;
+    padding: 0 20px;
+    margin-right:1px; /* It specifies the distance between each tab */
+    background:#F7F7F7;
+    color:Black;
+    text-decoration:none;
+    font: normal 12px Arial;
+    line-height: 24px;
+    border:1px solid #CAD0DB;
+    color:#666;
+    vertical-align:top;
+    text-decoration:none;
+}
+
+div.menu3 a:hover, div.menu3 a.current
+{
+    background:#E9ECF0;
+    line-height: 25px;
+    color:#000;
+}
+
+/*----------------------------
+	Search bar
+-----------------------------*/
+header #profil #searchIcon {
+	position: absolute;
+	top: 15px;
+	left: -18px;
+}
+
+header .searchform {
+	background: none;
+	-webkit-box-shadow: inset 0 0 5px rgba(0,0,0, 0.4), rgba(255,255,255,0.1) 0 1px 0;
+	box-shadow: inset 0 0 5px rgba(0,0,0, 0.4), rgba(255,255,255,0.1) 0 1px 0;
+	border-radius: 4px;
+	border: 1px solid rgba(0,0,0,0.25);
+	color: #fff;
+	text-shadow: rgba(0, 0, 0, 0.796875) 0px -1px 0px, rgba(255, 255, 255, 0.296875) 0px 0px 10px;
+	z-index: 9999;
+}
+
+header .searchform {
+	float: right;
+	width: 28%;
+	margin-top: 12px;
+	padding: 0;
+	border-radius: 20px;
+	position: relative;
+	top: -15px;
+	background-color: rgba(181, 205, 36, 0.7);
+}
+
+header .searchform input {
+	text-decoration: none;
+	font: 16px/16px Corbel,'Segoe UI',Arial, sans-serif;
+	padding: 5px 10px;
+	margin: 0;
+	background-color: transparent;
+	border-style: none;
+	color: #fff;
+	line-height: 1.3;
+	text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.15);
+	width: 85%;
+	box-shadow: none;
+}
+
+header .searchform input:focus {
+	outline: none;
+}
+
+.no-boxshadow header .searchform {
+	border: 1px solid #333;
+}
+
+.no-boxshadow header .searchform input {
+	background: #fff;
+	color: #333;
+}
+
+/*
+ * 1. :-moz-placeholder has been deprecated in favor of ::-moz-placeholder.
+ * 2. Using :placeholder for completeness.
+ */
+header .searchform input::-webkit-input-placeholder {
+	color: #fff;
+}
+header .searchform input:-moz-placeholder { /* 1 */
+	color: #fff;
+}
+header .searchform input::-moz-placeholder {
+	color: #fff;
+}
+header .searchform input:-ms-input-placeholder {
+	color: #fff;
+}
+header .searchform input:placeholder { /* 2 */
+	color: #fff;
+}
+
+header .searchform .icon-search {
+	position: absolute;
+	left: 230px;
+	top: 3px;
+	width: 40px;
+	bottom: 3px;
+	border-width: 0;
+	border-left: 1px solid rgba(7, 7, 7, 0.65);
+	background-color: transparent;
+	background: url('../img/search.png') no-repeat 10px 0px;
+	overflow: hidden;
+	text-indent: -9999px;
+	padding: 0 0 0 7px;
+	opacity: 0.33;
+}
+
+/*----------------------------
+	Profil et menus
+-----------------------------*/
+#menuEtConnexion {
+	display: block;
+	height: 39px;
+	position: relative;
+	width: 1130px;
+	margin-left: auto;
+	margin-right: auto;
+	padding-left: 78px;
+}
+
+/*----------------------------
+	Profil
+-----------------------------*/
+
+#menuEtConnexion #profil  {
+	position: relative;
+	left: 128px;
+	margin-left: 50px;
+	width: 250px;
+	height :60px;
+	float: right;
+}
+
+#menuEtConnexion #profil #logo-connexion{
+	float : left;
+	width : 40px;
+	height : 45px;
+	margin-left : 10px;
+	background: url('../img/login.png') no-repeat 0px 0px;
+	overflow: hidden;
+	text-align: center;
+	text-indent: -99999px;
+}
+
+#menuEtConnexion #profil #liens {
+	position: relative;
+	height: 45px;
+	margin-left: 10px;
+}
+
+#menuEtConnexion #profil a  {
+   	height: 40px;
+	margin-top : 20px;
+	font:17px Corbel,'Segoe UI',Arial, sans-serif;
+	font-weight : bold;
+	color : #945906;
+}
+
+#menuEtConnexion #profil #connexionLink {
+	position: relative;
+	margin-left: 30px;
+	font-size: 12px;
+}
+
+/*----------------------------
+	Braun filter bar
+-----------------------------*/
+
+#filter {
+	background: url("../img/bar.png") repeat-x 0 -94px;
+	display: block;
+	height: 39px;
+	margin-bottom: 55px;
+	position: relative;
+	width: 820px;
+	text-align: center;
+	-moz-box-shadow: 0 4px 4px #000;
+	-webkit-box-shadow: 0 4px 4px #000;
+	box-shadow: 0 4px 4px #000;
+	top: 0px;
+	float: left;
+	left: 78px;
+}
+
+#filter:before, #filter:after {
+	background: url("../img/bar.png") no-repeat;
+	height: 43px;
+	position: absolute;
+	top: 0;
+	width: 78px;
+	content: '';
+	
+	-moz-box-shadow:0 2px 0 rgba(0,0,0,0.4);
+	-webkit-box-shadow:0 2px 0 rgba(0,0,0,0.4);
+	box-shadow:0 2px 0 rgba(0,0,0,0.4);
+}
+
+#filter:before {
+	background-position: 0 -47px;
+	left: -78px;
+}
+
+#filter:after {
+	background-position: 0 0;
+	right: -78px;
+}
+
+#filter ul {
+	color: #FFFFFF;
+	display: inline-block;
+	height: 39px;
+	line-height: 37px;
+	padding: 0 15px;
+	text-shadow:1px 1px 1px #315218;
+}
+
+#filter a {
+	color: #FFFFFF;
+	display: inline-block;
+	height: 39px;
+	line-height: 37px;
+	padding-right: 10px;
+	padding-left: 25px;
+	text-shadow:1px 1px 1px #315218;
+}
+
+#filter ul li ul li a {
+	width: 124px;
+	padding-left: 15px;
+	padding-right: 5px;
+}
+
+#filter ul li ul li ul li a {
+	width: 133px;
+}
+
+#filter li:hover{
+	text-decoration:none;
+	background: url("../img/bar.png") repeat-x 0 -138px;
+}
+#filter a:hover {
+	text-decoration:none;
+	background: url("../img/bar.png") repeat-x 0 -138px;
+	box-shadow:	1px 0 0 rgba(255, 255, 255, 0.2),
+				-1px 0 0 rgba(255, 255, 255, 0.2),
+				1px 0 1px rgba(0,0,0,0.2) inset,
+				-1px 0 1px rgba(0,0,0,0.2) inset;
+}
+
+/*----------------------------
+	Content area
+-----------------------------*/
+html, body, #content {
+	height: 100%;
+}
+
+body > #content {
+	height: auto; 
+	min-height: 100%;
+	width: 1100px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+    /*--------------------
+    	Accueil
+    ---------------------*/
+#content {
+min-height : 800px;
+}
+
+#content #derniersArticles {
+	position: absolute;
+	border: 3px solid #4D2B08;
+	width: 300px;
+	height: 400px;
+	margin: 10px;
+	margin-left: 50px;
+	padding: 10px;
+	-moz-border-radius:8px;
+    -webkit-border-radius:8px;	
+    border-radius:8px;	
+}
+
+#content #connectezVous {
+	position: absolute;
+	border: 3px solid #4D2B08;
+	width: 300px;
+	height: 50px;
+	margin-top: 450px; /** Pour le placement on regarde bloc prec margin + height + 40 (ici 10 + 400 + 30 = 420) */
+	margin-left: 50px;
+	padding: 10px;
+	-moz-border-radius:8px;
+    -webkit-border-radius:8px;	
+    border-radius:8px;	
+}
+
+#content #actualiteDuJour {
+	position: absolute;
+	border: 3px solid #4D2B08;
+	width: 300px;
+	height: 400px;
+	margin-top: 540px;
+	margin-left: 50px;
+	padding: 10px;
+	-moz-border-radius:8px;
+    -webkit-border-radius:8px;	
+    border-radius:8px;	
+}
+
+#content #gdPublic {
+	position: absolute;
+	border: 3px solid #4D2B08;
+	width: 300px;
+	height: 300px;
+	margin-top: 450px;
+	margin-left: 400px; /** Pour le placement on regarde bloc prec marginl + width + 50 (ici 50 + 300 + 50 = 400) */
+	padding: 10px;
+	-moz-border-radius:8px;
+    -webkit-border-radius:8px;	
+    border-radius:8px;	
+}
+
+#content #professionnel {
+	position: absolute;
+	border: 3px solid #4D2B08;
+	width: 300px;
+	height: 300px;
+	margin-top: 450px;
+	margin-left: 750px;
+	padding: 10px;
+	-moz-border-radius:8px;
+    -webkit-border-radius:8px;	
+    border-radius:8px;	
+}
+
+    /*--------------------
+    	Fruits & Légumes
+    ---------------------*/
+
+#content  #containerLiensImages2cat .listeFruitsLegumes {
+	position: relative;
+	border: 3px solid #4D2B08;
+	width: 460px;
+	height: 280px;
+	float: left;
+	margin: 20px;
+	padding: 10px;
+	-moz-border-radius:8px;
+    -webkit-border-radius:8px;	
+    border-radius:8px;	
+}
+
+#content  #containerLiensImages3cat .listeFruitsLegumes {
+	position: relative;
+	border: 3px solid #4D2B08;
+	width: 320px;
+	height: 280px;
+	float: left;
+	margin: 10px;
+	padding: 10px;
+	-moz-border-radius:8px;
+    -webkit-border-radius:8px;	
+    border-radius:8px;	
+}
+
+#content #presentation .listeForEach {
+	height: 250px;
+	padding-right: 25px;
+	overflow: scroll;
+	overflow: overlay; /* Google Chrome */
+}
+
+#content #presentation .listeForEach li {
+	margin-bottom: 7px;
+	color: #000000;
+}
+
+#content #presentation .listeForEach a {
+	color: #000000;
+}
+
+    /*--------------------
+   Derniers articles ajoutés
+    ---------------------*/
+#content .legendCenter {
+	padding-left: 15px;
+	padding-right: 15px;
+	text-align: center;
+	font:20px Corbel,'Segoe UI',Arial, sans-serif;
+	font-weight : bold;
+	color : #4D2B08;
+}
+
+#content #derniersArticles #accordeon {
+	height: 95%;
+	overflow: hidden;
+}
+
+#content #derniersArticles #accordeon a {
+	text-decoration: none;
+}
+
+#content #derniersArticles #accordeon h1 {
+	font-size: 1.2em;
+	color: #434543;
+	text-decoration: none;
+}
+
+#content #derniersArticles #accordeon .suite {
+	margin-top: 30px;
+}
+    /*--------------------
+        Menu GdPublic & Professionnel
+    ---------------------*/
+#content #menuGdPublic {
+    padding-left: 20px;
+	padding-right: 20px;
+	text-align: left;
+	font:20px Corbel,'Segoe UI',Arial, sans-serif;
+	font-weight : bold;
+	color : #945906;
+}
+
+#content #menuPro {
+    padding-left: 20px;
+	padding-right: 20px;
+	text-align: left;
+	font:20px Corbel,'Segoe UI',Arial, sans-serif;
+	font-weight : bold;
+	color : #945906;
+}
+
+#content #sousMenuPro {
+    padding-left: 40px;
+	padding-right: 40px;
+	text-align: left;
+	font:15px Corbel,'Segoe UI',Arial, sans-serif;
+	font-weight : bold;
+	color : #945906;
+}
+
+    /*--------------------
+    	Home Slider
+    ---------------------*/
+#content #home-slider {
+	position: absolute;
+	margin: 50px;
+	top: 228px;
+	left: 43%;
+	overflow:visible; /* corrige le problème de fluidité de l'animation */
+}
+
+    /*--------------------
+    	Boutons IMC et Super Traqueur & Jackpot santé
+    ---------------------*/
+
+#content #btn-super-traqueur {
+	background: url("../img/SuperTrackerButton.png") no-repeat left center;
+	height: 69px;
+	width: 232px;
+	position: relative;
+	text-indent: -99999px;
+	left: 450px;
+	top: 820px;
+
+}
+
+#content #btn-jackpot-sante {
+	background: url("../img/jackpotSanteBouton.png") no-repeat left center;
+	height: 69px;
+	width: 232px;
+	position: relative;
+	text-indent: -99999px;
+	left: 800px;
+	top: 750px;
+
+}
+
+    /*--------------------
+    	Graphe statistiques
+    ---------------------*/
+#content .blocStatistiques #holder {
+	margin-left: -40px;
+}
+
+#content .blocStatistiques {
+    float : left;
+	width: 750px;
+    border:3px solid #4D2B08;
+	background-color : #FFF;
+	margin-left: 150px;
+	margin-right: 150px;
+	padding-top : 20px;
+	padding-left : 20px;
+	padding-right : 20px;
+	padding-bottom : 10px;
+	-moz-border-radius:8px;
+    -webkit-border-radius:8px;	
+    border-radius:8px;	
+}
+#content .blocStatistiques svg {
+	height: 249px;
+}
+
+    /*--------------------
+      Messages importants
+    ---------------------*/
+#flashMessage {
+	font-size: 22px;
+	color : #F74200;
+	text-align: center;
+	margin-bottom: 20px;
+	position: absolute;
+	top: 223px;
+	left: -78px;
+	width: 100%;
+}
+
+#authMessage {
+  	font-size: 22px;
+	color : #e11818;
+	text-align: center;
+	margin-bottom: 20px;
+	position: absolute;
+	top: 223px;
+	left: -78px;
+	width: 100%;
+}
+
+	/*--------------------
+  	   Bloc des index et 
+  	   boutons associés
+      ---------------------*/
+#content #retour  a{
+	margin-left: 180px;
+	font:16px Corbel,'Segoe UI',Arial, sans-serif;
+	vertical-align:central;
+	color:#4D2B08;
+	text-decoration : none;
+}
+
+#content .bloc-index {
+	height: 20px;	
+    float : left;
+	width: 750px;
+    border:2px solid #4D2B08;
+	background-color : #FFFFFF;
+	margin-left: 150px;
+	margin-right: 150px;
+	margin-top: -2px;
+	padding-top : 10px;
+	padding-left : 20px;
+	padding-right : 20px;
+	padding-bottom : 10px;
+	-moz-border-radius:8px;
+    -webkit-border-radius:8px;	
+    border-radius:8px;	
+}
+
+#content .bloc-index .btns-index {
+	height: 32px;
+	width: 70px;
+	overflow: hidden;
+	text-align: center;
+	text-indent: -99999px;
+	position: relative;
+	float: right;
+	top: -27px;
+}
+
+#content .btns-index .btn-modifier {
+	background: url("../img/EditUser.png") no-repeat left center;
+	height: 32px;
+	width: 32px;
+	margin-right: 6px;
+	overflow: hidden;
+}
+#content .bloc-index .btns-index {
+	height: 32px;
+	width: 70px;
+	overflow: hidden;
+	text-align: center;
+	text-indent: -99999px;
+	position: relative;
+	float: right;
+	top: -27px;
+}
+
+#content .bloc-index .btn-modifier {
+	background: url("../img/EditUser.png") no-repeat left center;
+	height: 32px;
+	width: 32px;
+	margin-right: 6px;
+	overflow: hidden;
+}
+
+#content .bloc-index .btn-supprimer {
+	background: url("../img/DeleteUser.png") no-repeat left center;
+	height: 32px;
+	width: 32px;
+	margin-right: 6px;
+	position: relative;
+	top: -32px;
+	left: 38px;
+	overflow: hidden;
+}
+
+#content .btns-index .btn-modifier {
+	background: url("../img/EditUser.png") no-repeat left center;
+	height: 32px;
+	width: 32px;
+	margin-right: 6px;
+	overflow: hidden;
+}
+
+#content .btns-index .btn-supprimer {
+	background: url("../img/DeleteUser.png") no-repeat left center;
+	height: 32px;
+	width: 32px;
+	margin-right: 6px;
+	position: relative;
+	top: -32px;
+	left: 38px;
+	overflow: hidden;
+}
+
+#content .bloc-index .titreArticle {
+	margin-right: 20px;
+	padding-right: 20px;
+	float: left;
+	border-right: 1px solid #000;
+	height: 110%;
+	font-size: 1.3em;
+	margin-top: -3px;
+}
+
+#content .bloc-index .titreArticle a {
+	color: #434543;
+	text-decoration: none;
+}
+
+#content .bloc-index #bloc2 input[type="submit"] {
+	left: 175px;
+	top: -35px;
+	position: relative;
+}
+
+#content .bloc-index1 .btns-index {
+	height: 32px;
+	width: 70px;
+	overflow: hidden;
+	margin-right : 165px;
+	text-align: center;
+	position: relative;
+	float: right;
+	top: -10px;
+}
+
+#content #btn-ajouter {
+	background: url("../img/add-32x32.png") no-repeat left center;
+	height: 32px;
+	width: 32px;
+	margin-right: 6px;
+	position: relative;
+	left: 890px;
+	bottom: 10px;
+	overflow: hidden;
+	text-indent: -99999px;
+}
+
+}
+
+#content .bloc-index .btns-index{
+	height: 32px;
+	width: 70px;
+	overflow: hidden;
+	margin-top : 3px;
+	text-align: center;
+	position: relative;
+	float: right;
+	top : -30px;
+}
+
+#content .bloc-index .btn-modifier2 {
+	background: url("../img/EditUser.png") no-repeat left center;
+	height: 32px;
+	width: 32px;
+	margin-right: 6px;
+}
+
+#content .bloc-index #btn-supprimer2 {
+	background: url("../img/DeleteUser.png") no-repeat left center;
+	height: 32px;
+	width: 32px;
+	margin-right: 6px;
+	position: relative;
+	top: -32px;
+	left: 38px;
+}
+
+	/*--------------------
+  	 Bloc editeur de texte
+    ---------------------*/
+#content #bloc-editeur {
+    float : left;
+	width: 750px;
+    border:2px solid #4D2B08;
+	background-color : #FFFFFF;
+	margin :  0 150px 30px 150px;
+	padding-top : 20px;
+	padding-left : 40px;
+	padding-right : 20px;
+	padding-bottom : 10px;
+	-moz-border-radius:8px;
+    -webkit-border-radius:8px;	
+    border-radius:8px;	
+}
+
+    /*--------------------
+      Bloc Article
+    ---------------------*/
+#content #bloc-editeur #datesArticles {
+	margin-right: 135px;
+	display: inline;
+}
+
+#content #bloc-editeur #titreCategorie {
+	margin-bottom: 5px;
+}
+
+#content #bloc-editeur #contenuArticle {
+	margin-top: 80px;
+}
+
+#content #bloc-editeur pre a {
+	color: #424242;
+}
+
+
+    /*--------------------
+      Page de recherche
+    ---------------------*/
+
+#content .bloc1 #accordeon {
+	height: 95%;
+	overflow: hidden;
+	margin-bottom: 13px;
+}
+
+#content .bloc1 #accordeon a {
+	text-decoration: none;
+}
+
+#content .bloc1 #accordeon h1 {
+	font-size: 1.2em;
+	color: #434543;
+	text-decoration: none;
+	width: 696px;
+}
+
+#content #bloc-editeur #accordeon .suite {
+	margin-top: 30px;
+	float: right;
+}
+
+    /*--------------------
+      Générique \ À trier
+    ---------------------*/
+
+#content .center {
+	text-align: center;
+}
+
+#content .donneesStatistiques {
+    display: block;
+	font:20px Corbel,'Segoe UI',Arial, sans-serif;
+	margin-top :5px;
+	margin-left: 150px;
+	margin-right: 150px;
+	font-weight : bold;
+	color : #4D2B08;
+	float: left;
+	width: 60%;
+}
+
+#content .span2 {
+    display: block;
+	font:20px Corbel,'Segoe UI',Arial, sans-serif;
+	margin-top :5px;
+	margin-left: 150px;
+	margin-right: 150px;
+
+	padding-top : 30px;
+	font-weight : bold;
+	color : #4D2B08;
+	float: left;
+	width: 60%;
+}
+
+#content .span1{
+    display: block;
+	font:20px Corbel,'Segoe UI',Arial, sans-serif;
+	margin-top :5px;
+	margin-left : 12px;
+	padding-top : 30px;
+	font-weight : bold;
+	color : #4D2B08;
+    float:left;
+}
+#content #blocMentions {
+    float : left;
+	width: 750px;
+	height : 500px;
+    border:2px solid #4D2B08;
+	background-color : #FFFFFF;
+	margin-left: 150px;
+	margin-right: 150px;
+	padding-top : 20px;
+	padding-left : 20px;
+	padding-right : 20px;
+	padding-bottom : 10px;
+	-moz-border-radius:8px;
+    -webkit-border-radius:8px;	
+    border-radius:8px;	
+}
+
+#content #blocMentions .p1{
+    display: block;
+	font:15px Corbel,'Segoe UI',Arial, sans-serif;
+	color : #000000;
+	text-indent : 30px;
+}
+
+#content #blocMentions .p2{
+    display: block;
+	margin-bottom : -10px;
+	padding-right : 10px;
+	font:14px Corbel,'Segoe UI',Arial, sans-serif;
+	margin-left : 20px;
+	color : #000000;
+    float:left;
+}
+
+#content #blocMentions h1{
+    display: block;
+	text-align : center;
+	font:16px Corbel,'Segoe UI',Arial, sans-serif;
+	font-weight : bold;
+	color : #A6BC2A;
+    float:left;
+}
+
+#content #blocMentions h2{
+    display: block;
+	font:16px Corbel,'Segoe UI',Arial, sans-serif;
+	font-weight : bold;
+	color : #4D2B08;
+}
+
+#content #blocMentions li{
+    margin-top : 10px;
+	list-style-image : url('../img/liste2.png');
+	margin-left : 50px;
+}
+
+#content .bloc1 {
+    float : left;
+	width: 750px;
+    border:2px solid #4D2B08;
+	background-color : #FFFFFF;
+	margin-left: 150px;
+	margin-right: 150px;
+	padding-top : 20px;
+	padding-left : 20px;
+	padding-right : 20px;
+	padding-bottom : 10px;
+	-moz-border-radius:8px;
+    -webkit-border-radius:8px;	
+    border-radius:8px;	
+}
+
+#content .bloc1 h1{
+    display: block;
+	font:20px Corbel,'Segoe UI',Arial, sans-serif;
+	font-weight : bold;
+	color : #A6BC2A;
+    float:left;
+}
+
+#content .bloc1 h2{
+    display: block;
+	font:16px Corbel,'Segoe UI',Arial, sans-serif;
+	margin-left : 10px;
+	color : #A6BC2A;
+    float:left;
+}
+
+#content .bloc1 h5 {
+    display: block;
+	margin-top : 20px;
+	font:15px Corbel,'Segoe UI',Arial, sans-serif;
+	color : #000000;
+    float:left;
+}
+
+#content .bloc1 .p1{
+    display: block;
+	font:17px Corbel,'Segoe UI',Arial, sans-serif;
+	margin-left : 20px;
+	padding : 10px;
+	color : #000000;
+    float:left;
+}
+
+#content .bloc1  .p2{
+    display: block;
+	padding-top : 10px;
+	margin-bottom : 30px;
+	font:15px Corbel,'Segoe UI',Arial, sans-serif;
+	margin-left : 20px;
+	color : #000000;
+    float:left;
+}
+
+#content .bloc1 .p3{
+    display: block;
+	font:12px Corbel,'Segoe UI',Arial, sans-serif;
+	font-style : italic;
+	color : #F74200;
+	margin-top : 100px;
+	position : absolute;
+    float: right;
+}
+
+#content .bloc1 label {
+    display: block;
+	font:17px Corbel,'Segoe UI',Arial, sans-serif;
+	color : #000000;
+	margin-left : 150px;
+	margin-right : 30px;
+	margin-top : 8px;
+    width: 150px;
+    float: left;
+}
+
+#content .bloc1 span{
+    display: block;
+	font:12px Corbel,'Segoe UI',Arial, sans-serif;
+	font-style : italic;
+	color : #F74200;
+	margin-top : 20px;
+    float: right;
+}
+
+#content .bloc1 em {
+	color : #F74200;
+	margin-right : 10px;
+	
+}
+
+#content .bloc1 input[type="date"],
+#content .bloc1 input[type="text"],
+#content .bloc1 input[type="password"],
+#content .bloc1 input[type="email"]{
+  height: 30px;
+  width: 200px;
+  float: left;
+  border: 1px solid #A6BC2A;
+  font:15px Corbel,'Segoe UI',Arial, sans-serif;
+  padding-left : 10px;
+  padding-right : 10px;
+  margin-top: 5px;
+  margin-bottom: 3px;
+
+ }
+ 
+ #content .bloc1  input[type="submit"] {				
+    width : 100px;
+	margin-left : 5px;
+	height : 30px;
+	padding-left: 5px;
+	padding-right: 5px;
+	background-color : #FFFFFF;
+	font: 17px Corbel,'Segoe UI',Arial, sans-serif;
+	color : #4D2B08;
+	border: 1px solid #4D2B08;
+	-moz-border-radius:8px;
+    -webkit-border-radius:8px;	
+    border-radius:8px;	
+}
+ 
+#content .bloc1 input[type="radio"] {
+  position: relative;
+  margin-left : 30px;
+  top: 10px;
+}
+
+#content .bloc1 select {
+  height: 35px;
+  width: 220px;
+  float: left;
+  border: 1px solid #A6BC2A;
+  font:15px Corbel,'Segoe UI',Arial, sans-serif;
+  padding: 5px;
+  margin-top: 5px;
+  margin-bottom: 3px;
+}
+#content .bloc1  input[type="submit"] {
+    width : 110px;
+	margin-left : 650px;
+	height : 30px;
+	padding-left: 5px;
+	padding-right: 5px;
+	font: 17px Corbel,'Segoe UI',Arial, sans-serif;
+	color : #4D2B08;
+	border: 1px solid #4D2B08;
+	-moz-border-radius:8px;
+    -webkit-border-radius:8px;	
+    border-radius:8px;	
+}
+
+#content .bloc1 #cache {
+    display : none;
+    float : left;
+	width: 800px;
+    font:15px Corbel,'Segoe UI',Arial, sans-serif;
+}
+
+#content .bloc1 #cache label {
+    display: block;
+	font:17px Corbel,'Segoe UI',Arial, sans-serif;
+	color : #000000;
+	margin-left : 200px;
+	margin-bottom : 7px;
+    width: 100px;
+    float: left;
+}
+
+#content .bloc1 #cache label[for='allaitante'] {
+    position: absolute;
+}
+
+#content .bloc1 .labelInscription {
+	position: relative;
+	text-decoration: none;
+	color:#000000;
+	top: 8px;
+	margin-left: 5px;
+} 
+
+#content #bloc2  {
+    float: right;
+	margin-top: 10px;
+	right: 160px;
+	position: relative;
+}
+
+#content #bloc2 .p1 {
+	text-indent : 80px; 
+}
+
+#content #bloc2  input[type="submit"],
+                input[type="button"] {
+    width : 100px;
+	margin-left : 5px;
+	height : 30px;
+	padding-left: 5px;
+	padding-right: 5px;
+	background-color : #FFFFFF;
+	font: 17px Corbel,'Segoe UI',Arial, sans-serif;
+	color : #4D2B08;
+	border: 1px solid #4D2B08;
+	-moz-border-radius:8px;
+    -webkit-border-radius:8px;	
+    border-radius:8px;	
+}
+#content #bloc3  {
+    float: left;
+	margin-left : 40px;
+	margin-right : 137px;
+	margin-bottom : 60px;
+	margin-top: -220px;
+	padding-top : 20px;
+	padding-left : 20px;
+	padding-right : 20px;
+	padding-bottom : 10px;
+	border:2px solid #4D2B08;
+	background-color : #FFFFFF;
+	-moz-border-radius:8px;
+    -webkit-border-radius:8px;	
+    border-radius:8px;	
+}
+#content #bloc4  {
+    float: left;
+	margin-left : 30px;
+	margin-right : 35px;
+	margin-bottom : 60px;
+	padding-top : 20px;
+	padding-left : 20px;
+	padding-right : 20px;
+	padding-bottom : 10px;
+	border:2px solid #4D2B08;
+	background-color : #FFFFFF;
+	-moz-border-radius:8px;
+    -webkit-border-radius:8px;	
+    border-radius:8px;	
+}
+
+#content #bloc5 {
+	width : 820px;
+	padding: 30px;
+	margin-bottom: 20px;
+	margin-top : 20px;
+	margin-left: 109px;
+	background-color : #FFFFFF;
+	font : 15px Corbel, 'Segoe UI',Arial, sans-serif;
+	border: 1px solid #4D2B08;
+	-moz-border-radius:8px;
+    -webkit-border-radius:8px;	
+    border-radius:8px;	
+}
+
+#content #bloc5  table td {
+	vertical-align : top;
+}
+#content #bloc5 table table {
+	width: 300px;
+}
+
+#content #bloc5 p {
+	font:17px Corbel,'Segoe UI',Arial, sans-serif;
+}
+
+#content #bloc5 .p2{
+    display: block;
+	margin-top : 10px;
+	font:17px Corbel,'Segoe UI',Arial, sans-serif;
+	color : #000000;
+    float:left;
+}
+
+#content #bloc5 .p3{
+    display: block;
+	margin-top : 50px;
+	font:17px Corbel,'Segoe UI',Arial, sans-serif;
+	color : #000000;
+}
+
+#content  #bloc5 h1{
+    display: block;
+	font:20px Corbel,'Segoe UI',Arial, sans-serif;
+	font-weight : bold;
+	color : #A6BC2A;
+    float:left;
+}
+
+#content  #bloc5 h2{
+    display: block;
+	font:16px Corbel,'Segoe UI',Arial, sans-serif;
+	font-weight : bold;
+	color : #4D2B08;
+    float:left;
+}
+
+#content  #bloc5 a{
+	text-decoration : none;
+	left: 120px;
+	margin-left: 11px;
+	position: relative;
+}
+
+#content #bloc5  input{
+    width : 100px;
+	
+	margin-top : 20px;
+	height : 30px;
+	padding-left: 5px;
+	padding-right: 5px;
+	font: 17px Corbel,'Segoe UI',Arial, sans-serif;
+	color : #4D2B08;
+	border: 1px solid #4D2B08;
+	-moz-border-radius:8px;
+    -webkit-border-radius:8px;	
+    border-radius:8px;	
+}
+
+#content #bloc6 {
+	width : 400px;
+	margin-left: 50px;
+	margin-bottom: 40px;
+	font : 15px Corbel, 'Segoe UI',Arial, sans-serif;
+	
+}
+#content #bloc7  {
+    float: left;
+	margin-left : 500px;
+	margin-top : 20px;
+	margin-bottom : 20px;
+}
+
+#content #bloc7  h2 {
+	font: 30px Corbel,'Segoe UI',Arial, sans-serif;
+}
+
+#content #bloc7  input[type="submit"]{
+    width : 100px;
+	margin-left : 5px;
+	height : 30px;
+	padding-left: 5px;
+	padding-right: 5px;
+	font: 17px Corbel,'Segoe UI',Arial, sans-serif;
+	color : #4D2B08;
+	border: 1px solid #4D2B08;
+	-moz-border-radius:8px;
+    -webkit-border-radius:8px;	
+    border-radius:8px;	
+}
+
+#content #bloc8 {
+	width : 450px;
+	height : 400px;
+	padding-left : 18px;
+	margin-left: 20px;
+	margin-right: 30px;
+	margin-bottom: 40px;
+	margin-top : 40px;
+	font : 15px Corbel, 'Segoe UI',Arial, sans-serif;
+	color : #4D2B08;
+	border: 1px solid #4D2B08;
+	background-color : #FFFFFF;
+	-moz-border-radius:8px;
+    -webkit-border-radius:8px;	
+    border-radius:8px;	
+	
+}
+#content #bloc8  input[type="submit"]{
+    width : 100px;
+	margin-left : 175px;
+	height : 30px;
+	padding-left: 5px;
+	padding-right: 5px;
+	font: 17px Corbel,'Segoe UI',Arial, sans-serif;
+	color : #4D2B08;
+	border: 1px solid #4D2B08;
+	-moz-border-radius:8px;
+    -webkit-border-radius:8px;	
+    border-radius:8px;	
+}
+
+#content #bloc9 {
+    width : 250px;
+	float : left;
+	margin-left : 730px;
+	margin-top : 10px;
+}
+
+#content #bloc9  input[type="submit"],
+                input[type="button"] {
+				
+    width : 100px;
+	margin-left : 5px;
+	height : 30px;
+	padding-left: 5px;
+	padding-right: 5px;
+	background-color : #FFFFFF;
+	font: 17px Corbel,'Segoe UI',Arial, sans-serif;
+	color : #4D2B08;
+	border: 1px solid #4D2B08;
+	-moz-border-radius:8px;
+    -webkit-border-radius:8px;	
+    border-radius:8px;	
+}
+
+#content #bloc10  input[type="submit"] {
+    float : left;				
+    width : 100px;
+	margin-left : 840px;
+	margin-top : 10px;
+	height : 30px;
+	padding-left: 5px;
+	padding-right: 5px;
+	background-color : #FFFFFF;
+	font: 17px Corbel,'Segoe UI',Arial, sans-serif;
+	color : #4D2B08;
+	border: 1px solid #4D2B08;
+	-moz-border-radius:8px;
+    -webkit-border-radius:8px;	
+    border-radius:8px;	
+}
+
+#content #bloc11  input[type="submit"] {
+    float : left;				
+    width : 100px;
+	margin-left : 840px;
+	margin-top : -10px;
+	height : 30px;
+	padding-left: 5px;
+	padding-right: 5px;
+	background-color : #FFFFFF;
+	font: 17px Corbel,'Segoe UI',Arial, sans-serif;
+	color : #4D2B08;
+	border: 1px solid #4D2B08;
+	-moz-border-radius:8px;
+    -webkit-border-radius:8px;	
+    border-radius:8px;	
+}
+
+#content #bloc13  input[type="submit"] {				
+    width : 100px;
+	margin-top : 5px;
+	height : 30px;
+	padding-left: 5px;
+	padding-right: 5px;
+	background-color : #FFFFFF;
+	font: 17px Corbel,'Segoe UI',Arial, sans-serif;
+	color : #4D2B08;
+	border: 1px solid #4D2B08;
+	-moz-border-radius:8px;
+    -webkit-border-radius:8px;	
+    border-radius:8px;	
+}
+
+#content #bloc12  input[type="submit"] {				
+    width : 100px;
+	margin-left : 845px;
+	margin-top : 5px;
+	height : 30px;
+	padding-left: 5px;
+	padding-right: 5px;
+	background-color : #FFFFFF;
+	font: 17px Corbel,'Segoe UI',Arial, sans-serif;
+	color : #4D2B08;
+	border: 1px solid #4D2B08;
+	-moz-border-radius:8px;
+    -webkit-border-radius:8px;	
+    border-radius:8px;	
+}
+
+#content #blocIMC {
+	position: absolute;
+	top: 0;	
+	left: 0;
+	height: 200%;
+	width: 100%;
+	padding-left: 35%;
+	padding-top: 15%;
+	background-color: black;
+	filter: alpha(opacity=80);
+    -moz-opacity: 0.8;
+    opacity: 0.8;
+    z-index: 1;
+}
+
+#content #blocQuestion {
+	position: absolute;
+	width: 690px;
+	top: 305px;
+    border:4px solid #4D2B08;
+	background-color : #FFFFFF;
+	margin-left: 205px;
+	padding-top : 20px;
+	padding-left : 20px;
+	padding-bottom : 10px;
+	-moz-border-radius:8px;
+    -webkit-border-radius:8px;	
+    border-radius:8px;
+    z-index: 2;
+}
+
+#content #blocQuestion .p1 {
+	text-indent : 10px;
+}
+#content #blocQuestion p,
+#content #blocQuestion ul {
+	margin-left: 40px;
+	margin-top: 3px;
+}
+
+#content #blocQuestion input[type="submit"] {
+	width : 100px;
+	position: absolute;
+	right: 3%;
+	bottom: 5%;
+	height : 30px;
+	padding-left: 5px;
+	padding-right: 5px;
+	font: 17px Corbel,'Segoe UI',Arial, sans-serif;
+	color : #4D2B08;
+	background-color : #FFFFFF;
+	border: 1px solid #4D2B08;
+	-moz-border-radius:8px;
+    -webkit-border-radius:8px;	
+    border-radius:8px;	
+}
+
+#content #presentation {
+    float : left;
+	width: 950px;
+}
+
+#content #presentation {
+    float : left;
+	width: 1100px;
+}
+
+#content #presentation  #lien-accueil a {
+    float : right;
+	position : relative;
+	font:14px Corbel,'Segoe UI',Arial, sans-serif;
+	text-align : center;
+	margin-top : 330px;
+	margin-right : 10%;
+	margin-bottom : 20px;
+	color : #4D2B08;
+}
+
+#content #presentation #image{
+    float : left;
+	width: 300px;
+	height : 280px;
+	background-color : #FFFFFF;
+	background: url('../img/accueilFruit.png') no-repeat left center;
+	
+}
+
+#content #presentation .texte {
+    float : left;
+	width: 650px;
+	padding: 10px 20px 10px 20px;
+}
+#content #presentation .texte .images{
+    float : right;
+	width: 165px;
+	height : 128px;
+	background-color : #FFFFFF;
+	background: url('../img/fruits.jpg') no-repeat left center;
+	
+}
+
+#content #presentation .texte .span1{
+	font:50px Corbel,'Segoe UI',Arial, sans-serif;
+	text-align : center;
+	margin-left : 250px;
+
+	font-weight : bold;
+	color : #A6BC2A;
+
+}
+
+#content #presentation .texte .span2{
+	font:50px Corbel,'Segoe UI',Arial, sans-serif;
+	text-align : center;
+	margin-left : 150px;
+	margin-bottom : 20px;
+	margin-top : -30px;
+	font-weight : bold;
+	color : #A6BC2A;
+
+}
+
+#content #presentation .texte .span3{
+	font:50px Corbel,'Segoe UI',Arial, sans-serif;
+	text-align : center;
+	margin-left : 50px;
+	font-weight : bold;
+	color : #A6BC2A;
+
+}
+
+#content #presentation .texte .span4{
+	font:50px Corbel,'Segoe UI',Arial, sans-serif;
+	text-align : center;
+	margin-left : 160px;
+	margin-bottom : 20px;
+	font-weight : bold;
+	color : #A6BC2A;
+
+}
+
+#content #presentation .texte .span5{
+	font:50px Corbel,'Segoe UI',Arial, sans-serif;
+	text-align : center;
+	margin-left : 100px;
+	margin-bottom : 20px;
+	font-weight : bold;
+	color : #A6BC2A;
+
+}
+
+#content #presentation .texte .span6{
+	font:50px Corbel,'Segoe UI',Arial, sans-serif;
+	text-align : center;
+	margin-left : 30px;
+	font-weight : bold;
+	color : #A6BC2A;
+
+}
+
+#content #presentation .texte .p1{
+    display: block;
+	text-indent : 30px;
+	margin-top : 20px;
+	font:17px Corbel,'Segoe UI',Arial, sans-serif;
+	margin-left : 20px;
+	color : #000000;
+    float:left;
+}
+
+#content #presentation .texte h1{
+    display: block;
+	font:20px Corbel,'Segoe UI',Arial, sans-serif;
+	margin-top : 50px;
+	margin-left : 20px;
+	font-weight : bold;
+	color : #4D2B08;
+    float:left;
+
+}
+
+#content #presentation #texte0 {
+    float : left;
+}
+
+#content #presentation #texte0 .p1{
+    display: block;
+	vertical-align : middle;
+	text-indent : 30px;
+	font:17px Corbel,'Segoe UI',Arial, sans-serif;
+	margin-left : 20px;
+	color : #000000;
+    float:left;
+}
+
+#content #presentation #texte0 h1{
+    display: block;
+	font:20px Corbel,'Segoe UI',Arial, sans-serif;
+	margin-top :5px;
+	margin-bottom :7px;
+	margin-left : 20px;
+	font-weight : bold;
+	color : #4D2B08;
+    float:left;
+
+}
+
+#content #presentation #texte0 table {
+ width : 90%;
+ margin-left : 30px;
+}
+
+#content #presentation #texte0 td {
+width : 90%;
+padding-bottom : 30px;
+vertical-align : middle;
+}
+
+#content #presentation .texte1 {
+    float : left;
+	margin-bottom : 20px;
+}
+
+#content #presentation .texte1 .p1{
+    display: block;
+	text-indent : 30px;
+	margin-right : 50px;
+	font:17px Corbel,'Segoe UI',Arial, sans-serif;
+	color : #000000;
+    float:left;
+}
+
+#content #presentation .texte1 h1{
+    display: block;
+	font:20px Corbel,'Segoe UI',Arial, sans-serif;
+	font-weight : bold;
+	color : #4D2B08;
+    float:left;
+}
+
+#content #presentation .texte1 h2{
+    display: block;
+	font:20px Corbel,'Segoe UI',Arial, sans-serif;
+	margin-left : 30px;
+	font-weight : bold;
+	color : #4D2B08;
+    float:left;
+}
+
+#content #presentation .texte1 h3{
+    display: block;
+	font:20px Corbel,'Segoe UI',Arial, sans-serif;
+	margin-left : 30px;
+	margin-top : 50px;
+	font-weight : bold;
+	color : #4D2B08;
+    float:left;
+}
+
+#content #presentation .texte1 ul{
+    display: block;
+	font:15px Corbel,'Segoe UI',Arial, sans-serif;
+	color : #000000;
+    float:left;
+}
+
+#content #presentation .texte1 table {
+ 	margin-left : 50px;
+}
+
+#content #presentation .texte1  .bloc .p2{
+    display: block;
+	text-indent : 30px;
+	font:17px Corbel,'Segoe UI',Arial, sans-serif;
+	margin-left : 30px;
+	margin-bottom : 30px;
+	width : 81%;
+	padding : 10px;
+	color : #000000;
+    float:left;   
+	border:2px solid #4D2B08;
+	background-color : #FFFFFF;
+	-moz-border-radius:8px;
+    -webkit-border-radius:8px;	
+    border-radius:8px;	
+}	
+
+#content #presentation #texte2 {
+    float : left;
+}
+
+#content #presentation #texte2 .p1{
+    display: block;
+	text-indent : 30px;
+	font:17px Corbel,'Segoe UI',Arial, sans-serif;
+	margin-left : 20px;
+	color : #000000;
+    float:left;
+}
+
+#content #presentation #texte2 h1{
+    display: block;
+	font:20px Corbel,'Segoe UI',Arial, sans-serif;
+	margin-top :5px;
+	margin-bottom :7px;
+	margin-left : 50px;
+	padding-top : 30px;
+	font-weight : bold;
+	color : #4D2B08;
+    float:left;
+
+}
+
+#content #presentation #texte2 table {
+ width : 90%;
+ margin-left : 20px;
+ float : left;
+}
+
+#content #presentation #texte3 {
+    float : left;
+}
+
+#content #presentation #texte3 .p1{
+    display: block;
+	text-indent : 30px;
+	vertical-align : middle;
+	font:17px Corbel,'Segoe UI',Arial, sans-serif;
+	margin-left : 20px;
+	margin-bottom : 10px;
+	color : #000000;
+    float:left;
+}
+
+#content #presentation #texte3 h1{
+    display: block;
+	font:20px Corbel,'Segoe UI',Arial, sans-serif;
+	margin-top :5px;
+	margin-bottom :7px;
+	margin-left : 20px;
+	padding-top : 30px;
+	font-weight : bold;
+	color : #4D2B08;
+    float:left;
+
+}
+
+#content #presentation #texte3 table {
+ width : 90%;
+ margin-left : 50px;
+ vertical-align : middle;
+    
+}
+
+#content #presentation #texte4 {
+    float : left;
+}
+
+#content #presentation #texte4 .p1{
+    display: block;
+	text-indent : 30px;
+	font:17px Corbel,'Segoe UI',Arial, sans-serif;
+	margin-left : 20px;
+	margin-bottom : 10px;
+	color : #000000;
+    float:left;
+}
+
+#content #presentation #texte4 h1{
+    display: block;
+	font:20px Corbel,'Segoe UI',Arial, sans-serif;
+	margin-top :10px;
+	margin-bottom :7px;
+	margin-left : 20px;
+	padding-top : 30px;
+	font-weight : bold;
+	color : #4D2B08;
+    float:left;
+
+}
+
+#content #presentation #texte4 table {
+ width : 90%;
+ margin-left : 50px;
+    
+}
+
+#content #presentation #texte4 span{
+	font:50px Corbel,'Segoe UI',Arial, sans-serif;
+	text-align : center;
+	margin-left : 250px;
+	margin-bottom : 20px;
+	font-weight : bold;
+	color : #A6BC2A;
+}
+
+#content #presentation #texte5 table {
+ width : 1060px;
+ margin-top : 300px;
+ margin-left : 50px;
+    
+}
+#content #presentation #texte5 table  td{
+ padding-left : 20px;
+ padding-right : 20px;
+ width: 350px
+    
+}
+
+#content #presentation #texte5 .p1{
+    display: block;
+	font:17px Corbel,'Segoe UI',Arial, sans-serif;
+	margin-left : 20px;
+	text-indent : 30px;
+	color : #000000;
+    float:left;
+}
+
+#content #presentation #texte5 h1{
+    display: block;
+	font:20px Corbel,'Segoe UI',Arial, sans-serif;
+	margin-top :5px;
+	margin-left : 50px;
+	padding-top : 30px;
+	font-weight : bold;
+	color : #4D2B08;
+    float:left;
+
+}
+
+#content #presentation #texte6 {
+ width : 100%;
+ height : 200px;
+ float : left;
+    
+}
+
+#content #presentation #texte6 h1{
+    display: block;
+	font:20px Corbel,'Segoe UI',Arial, sans-serif;
+	margin-bottom :7px;
+	margin-top : 20px;
+	margin-left : 70px;
+	font-weight : bold;
+	color : #4D2B08;
+    float:left;
+}
+
+#content  #presentation #texte6 .p1 {
+	display: block;
+	font:17px Corbel,'Segoe UI',Arial, sans-serif;
+	margin-left : 20px;
+	text-indent : 30px;
+	float: left;
+	color : #000000;
+	border:2px solid #4D2B08;
+	background-color : #FFFFFF;
+	width : 80%;
+	margin-left : 70px;
+	height : 100px;
+	padding : 10px;
+	-moz-border-radius:8px;
+    -webkit-border-radius:8px;	
+    border-radius:8px;	
+}
+
+#content #presentation #titre-accueil{
+    float : left;
+	width: 630px;
+	height : 280px;
+	padding: 10px 20px 10px 10px;
+}
+
+#content #presentation #titre-accueil span{
+	font:50px Corbel,'Segoe UI',Arial, sans-serif;
+	margin-left : 40px;
+	margin-bottom : 20px;
+	font-weight : bold;
+	color : #A6BC2A;
+
+}
+
+#content #presentation #titre-accueil p{
+    display: block;
+	font:17px Corbel,'Segoe UI',Arial, sans-serif;
+	margin-left : 40px;
+	margin-top : 10px;
+	color : #000000;
+    float:left;
+}
+
+#content  #presentation #titre-accueil label {
+    display: block;
+	font:17px Corbel,'Segoe UI',Arial, sans-serif;
+	color : #000000;
+	margin-left : 40px;
+	margin-top : 35px;
+    width: 150px;
+    float: left;
+}
+
+#content #presentation #titre-accueil select {
+  height: 30px;
+  width: 170px;
+  float: left;
+  margin-bottom : 8px; 
+  margin-left : 40px;
+  margin-top : 40px;
+  border: 1px solid #A6BC2A;
+  font:15px Corbel,'Segoe UI',Arial, sans-serif;
+  padding: 4px;
+ }
+ 
+#content  #presentation #titre-accueil input[type="text"] {
+  height: 30px;
+  width: 170px;
+  float: left;
+  border: 1px solid #A6BC2A;
+  margin-left : 15px;
+  margin-top : 40px;
+  font:15px Corbel,'Segoe UI',Arial, sans-serif;
+  padding-left : 10px;
+  padding-right : 10px;
+}
+
+#content #presentation #titre-accueil  input[type="submit"] {
+    width : 100px;
+	margin-left : 3%;
+	margin-top :6.5%;
+	height : 30px;
+	padding-left: 5px;
+	padding-right: 5px;
+	font: 17px Corbel,'Segoe UI',Arial, sans-serif;
+	color : #4D2B08;
+	background-color : #FFFFFF;
+	border: 1px solid #4D2B08;
+	-moz-border-radius:8px;
+    -webkit-border-radius:8px;	
+    border-radius:8px;	
+}
+
+#content #menus {
+    float : left;
+	width: 950px;
+	height : 610px;
+	margin-left: 75px;
+}
+
+#content #menus .b1 #fruits {
+	color: #00A64A;
+}
+
+#content #menus .b1 #legumes {
+	color:#95ED6F;
+}
+
+#content #menus .b1 #cereales{
+	color:#D66918;
+}
+
+#content #menus .b1 #proteines {
+	 color:#CE1C21;
+}
+
+#content #menus .b1 #produitsLaitiers {
+	 color:#5286C6;
+}
+
+#content #menus .b1 #matieresGrasses {
+	 color:#E1D201;
+}
+
+#content #menus  .b1 .bloc-menu {
+  border: 3px solid #4D2B08;
+  background-color : #FFFFFF;
+  float: left;
+  padding: 10px;
+  margin-left: 30px;
+  margin-top : 20px;
+  height: 250px;
+  width: 250px;
+  font-size: 17px;
+  text-align: justify;
+  position: relative;
+  -moz-border-radius:8px;
+  -webkit-border-radius:8px;	
+  border-radius:8px;
+  -moz-box-shadow: 4px 4px 10px #888;  
+  -webkit-box-shadow: 4px 4px 10px #888;  
+  box-shadow:4px 4px 6px #888;
+}
+
+#content #menus  .b1 .bloc-menu h3 {
+  font-size: 20px;
+  color : #A6BC2A;
+  text-align: center;
+  position: relative;
+  width: 250px;
+  padding-bottom : 5px;
+  border-bottom : 1px solid #4D2B08;
+}
+
+#content #menus  .b1 .bloc-menu a {
+  font-size: 20px;
+  color : #A6BC2A;
+  text-align: center;
+  position: relative;
+  width: 250px;
+  height : 180px;
+  margin-left: 3px;
+  margin-right: 3px;
+  margin-bottom : 3px;
+  padding-bottom : 5px;
+  text-decoration : none;
+  border-bottom : 1px solid #4D2B08;
+}
+
+#content #menus  .b1 .bloc-menu h3 a {
+  border-bottom : 0px; /* Pas de deux deuxième bordure ici */
+}
+
+#content #menus .b1 .bloc-menu p{
+  font-size: 14px;
+  padding-top : 10px;
+  color : #000000;
+  text-align: justify;
+  position: relative;
+  width: 250px;
+}
+
+#content #menus span{
+    display: block;
+	float : left;
+	margin-right : 800px;
+	font:20px Corbel,'Segoe UI',Arial, sans-serif;
+	margin-left : 1px;
+	font-weight : bold;
+	color : #4D2B08;
+}
+
+#content #encyclo {
+    float : left;
+	margin-left : 20px;
+	width: 1020px;
+	height : 650px;
+	padding-left : 30px;
+}
+
+#content #encyclo span{
+    display: block;
+	float : left;
+	margin-right : 800px;
+	font:20px Corbel,'Segoe UI',Arial, sans-serif;
+	margin-left : 1px;
+	font-weight : bold;
+	color : #4D2B08;
+}
+
+#content #encyclo .bloc-gauche {
+  border: 3px solid #4D2B08;
+  background-color : #FFFFFF;
+  float: left;
+  padding: 20px;
+  margin-right : 1%;
+  height: 550px;
+  width: 300px;
+  font-size: 17px;
+  text-align: justify;
+  position: relative;
+  -moz-border-radius:8px;
+  -webkit-border-radius:8px;	
+  border-radius:8px;
+  -moz-box-shadow: 4px 4px 10px #888;  
+  -webkit-box-shadow: 4px 4px 10px #888;  
+  box-shadow:4px 4px 6px #888;
+}
+
+#content #encyclo .bloc-gauche  li{
+    color : #000000;
+	list-style-image : url('../img/liste2.png');
+	margin-left : 30px;	
+}
+
+#content #encyclo .bloc-gauche  li a {
+	font: 16px Corbel,'Segoe UI',Arial, sans-serif;
+	color: #4D2B08;
+}
+
+#content #encyclo .bloc-gauche {
+  border: 3px solid #4D2B08;
+  background-color : #FFFFFF;
+  float: left;
+  overflow: scroll;
+  overflow: overlay; /* Google Chrome */
+  padding: 20px;
+  margin-right : 1%;
+  height: 560px;
+  width: 340px;
+  font-size: 17px;
+  text-align: justify;
+  position: relative;
+  -moz-border-radius:8px;
+  -webkit-border-radius:8px;	
+  border-radius:8px;
+  -moz-box-shadow: 4px 4px 10px #888;  
+  -webkit-box-shadow: 4px 4px 10px #888;  
+  box-shadow:4px 4px 6px #888;
+}
+
+#content #encyclo #petitBloc-droit {
+  border: 3px solid #4D2B08;
+  background-color : #FFFFFF;
+  float: left;
+  padding: 10px;
+  height: 215px;
+  width: 275px;
+  font-size: 17px;
+  text-align: justify;
+  position: relative;
+  -moz-border-radius:8px;
+  -webkit-border-radius:8px;	
+  border-radius:8px;
+  -moz-box-shadow: 4px 4px 10px #888;  
+  -webkit-box-shadow: 4px 4px 10px #888;  
+  box-shadow:4px 4px 6px #888;
+}
+
+#content #encyclo #petitBloc-droit #titre  {
+  font-size: 16px;
+  color : #A6BC2A;
+  text-align: center;
+}
+
+#content #encyclo #petitBloc-droit #choix-portion {
+	float : left;
+	margin-top : 5px;
+	margin-left : 8px;
+	width : 250px;
+	height : 50px;
+}
+
+#content #encyclo #petitBloc-droit  #choix-portion p {
+    display: block;
+	font:12px Corbel,'Segoe UI',Arial, sans-serif;
+	margin-right : 90px;
+	color : #000000;
+    float:left;
+}
+
+#content #encyclo  #petitBloc-droit   #choix-portion select[id="quantite"]{
+  height: 23px;
+  width: 40px;
+  float: left;
+  margin-right : 16px;
+  margin-top : 5px;
+  margin-bottom : 8px;
+  border: 1px solid #A6BC2A;
+  font:13px Corbel,'Segoe UI',Arial, sans-serif;
+  font-weight : bold;
+  padding: 3px;
+}
+
+#content #encyclo  #petitBloc-droit  #choix-portion select[id="portion"]{
+  height: 23px;
+  width: 125px;
+  float: left;
+  margin-top : 5px;
+  margin-bottom : 15px;
+  border: 1px solid #A6BC2A;
+  font:13px Corbel,'Segoe UI',Arial, sans-serif;
+  font-weight : bold;
+  padding: 3px;
+}
+
+#content #encyclo  #petitBloc-droit #choix-portion #boutons {
+	width : 140px;
+	height : 30px;
+	margin-left : 130px;
+	float : left;
+}
+
+#content #encyclo  #petitBloc-droit #choix-portion #boutons input[type="submit"] ,
+													     input[type="reset"]{
+    width : 60px;
+	float : left;
+	margin-left : 5px;
+	margin-top : 10px;
+	height : 20px;
+	padding-left: 5px;
+	padding-right: 5px;
+	padding-bottom : 8px;
+	font: 14px Corbel,'Segoe UI',Arial, sans-serif;
+	color : #4D2B08;
+	background-color : #FFFFFF ;
+	border: 1px solid #4D2B08;
+	-moz-border-radius:8px;
+    -webkit-border-radius:8px;	
+    border-radius:8px;	
+}
+
+#content #encyclo  #petitBloc-droit  #choix-portion #colonne1 {
+  height: 20px;
+  width:230px;
+  margin-top : 5px;
+  margin-left : 30px;
+  float: left;
+  text-align : left;
+  font:13px Corbel,'Segoe UI',Arial, sans-serif;
+  color : #000000;
+}
+
+#content #encyclo  #petitBloc-droit  #choix-portion #colonne1 input[type="checkbox"] {
+margin-right : 2px;
+}
+
+#content #encyclo .bloc-droit {
+  border: 3px solid #4D2B08;
+  background-color : #FFFFFF;
+  float: left;
+  padding: 10px;
+  margin-right : 10px;
+  height: 430px;
+  width: 275px;
+  font-size: 17px;
+  text-align: justify;
+  position: relative;
+  -moz-border-radius:8px;
+  -webkit-border-radius:8px;	
+  border-radius:8px;
+  -moz-box-shadow: 4px 4px 10px #888;  
+  -webkit-box-shadow: 4px 4px 10px #888;  
+  box-shadow:4px 4px 6px #888;
+}
+
+#content #encyclo .bloc-droit  p{
+    color : #000000;
+    font: 20px Corbel,'Segoe UI',Arial, sans-serif;
+    font-weight : bold;
+	margin-bottom : 5px;
+    float : left;
+}
+
+#content #encyclo .bloc-droit  h3 {
+  font-size:24px;
+  color : #A6BC2A;
+  text-align: left;
+}
+
+#content #encyclo .bloc-droit .titre  h2 {
+  font-size: 22px;
+  color : #A6BC2A;
+  text-align: center;
+}
+
+#content #encyclo .titre p {
+  display : block;
+  height : 5px;
+  float : left;
+  color : #4D2B08;
+  text-align: left;
+  padding-bottom : 20px;
+}
+
+#content #encyclo .bloc-droit .choix-portion {
+	float : left;
+	margin-top : 10px;
+	margin-left : 8px;
+	width : 250px;
+	height : 50px;
+}
+
+#content #encyclo  .bloc-droit .choix-portion p {
+    display: block;
+	font:14px Corbel,'Segoe UI',Arial, sans-serif;
+	margin-right : 90px;
+	color : #000000;
+    float:left;
+}
+
+#content #encyclo  .bloc-droit  .choix-portion select[class="quantite"] {
+  height: 28px;
+  width: 40px;
+  float: left;
+  margin-right : 8px;
+  margin-top : 5px;
+  border: 1px solid #A6BC2A;
+  font:15px Corbel,'Segoe UI',Arial, sans-serif;
+  font-weight : bold;
+  padding: 3px;
+}
+
+#content #encyclo  .bloc-droit  .choix-portion select[class="portion"] {
+  height: 28px;
+  width: 150px;
+  float: left;
+  margin-top : 5px;
+  margin-bottom : 2px;
+  border: 1px solid #A6BC2A;
+  font:15px Corbel,'Segoe UI',Arial, sans-serif;
+  font-weight : bold;
+  padding: 3px;
+}
+
+#content #encyclo  .bloc-droit .choix-portion a {
+    float : left;
+	margin-left : 20px;
+    margin-top : 10px;
+	font: 14px Corbel,'Segoe UI',Arial, sans-serif;
+	color : #4D2B08;
+}
+
+#content #encyclo  .bloc-droit .choix-portion input[type="submit"] {
+    width : 60px;
+	float : left;
+	margin-left : 10px;
+	margin-right: -20px;
+	margin-top : 10px;
+	position : relative;
+	height : 20px;
+	padding-left: 5px;
+	padding-right: 5px;
+	padding-bottom : 8px;
+	font: 14px Corbel,'Segoe UI',Arial, sans-serif;
+	color : #4D2B08;
+	background-color : #FFFFFF;
+	border: 1px solid #4D2B08;
+	-moz-border-radius:8px;
+    -webkit-border-radius:8px;	
+    border-radius:8px;	
+}
+
+#content #encyclo .bloc-droit .supprimer {
+	background: url('../img/supprimer.png') no-repeat left center;
+    width : 20px;
+    height : 25px;
+    position : absolute;
+    margin-left : 260px;
+}
+
+#content #encyclo .bloc-droit .supprimer a  {
+	text-decoration : none;
+	color : white;
+}
+
+#content #encyclo .bloc-droit .info-aliment {
+  float: left;
+  height: 170px;
+  width: 274px;
+}
+
+#content #encyclo .bloc-droit .info-aliment .groupeAlimentaire {
+	width: 100%;
+	text-align: center;
+}
+
+#content #encyclo .bloc-droit .info-aliment .groupeAlimentaire a {
+	text-decoration: none;
+	color : #4D2B08;
+}
+
+#content #encyclo .bloc-droit .info-aliment table {
+    border: 1px solid #A6BC2A;
+	border-collapse: collapse;
+}
+
+#content #encyclo .bloc-droit .info-aliment  th {
+	font:12px Corbel,'Segoe UI',Arial, sans-serif;
+	text-align : center;
+	font-weight : bold;
+	color : #000000;
+	border: 1px solid #A6BC2A;
+	width: 30%;
+	padding: 5px;
+	background-color: #EAEFC9;
+}
+
+#content #encyclo .bloc-droit .info-aliment td{
+	width: 30%;
+	padding: 5px;
+	border: 1px solid #A6BC2A;
+	text-align: left;
+}
+
+#content #encyclo .bloc-droit .info-aliment  td li {
+    color : #000000;
+	font:11px Corbel,'Segoe UI',Arial, sans-serif;
+	list-style : none;
+	margin-bottom : 15px;
+	margin-left : 5px;
+}
+
+#content #encyclo .bloc-droit .info-aliment  td li p{
+    display : block;
+	float : right;
+	margin-right : 5px;
+	font:12px Corbel,'Segoe UI',Arial, sans-serif;
+	font-weight : bold;
+	list-style : none;
+
+}
+
+#content #encyclo .bloc-droit .info-aliment .calories  {
+    float: left;
+    padding: 5px;
+    height: 20px;
+    width: 264px;
+ 	font:15px Corbel,'Segoe UI',Arial, sans-serif;
+	color : #000000;
+}
+
+#content #encyclo .bloc-droit .info-aliment .calories  p{
+    display : block;
+	float : right;
+	margin-right : 5px;
+	font:17px Corbel,'Segoe UI',Arial, sans-serif;
+	font-weight : bold;
+	list-style : none;
+
+}
+
+#content #encyclo .bloc-droit  .info-nutriment {
+  display : none; 
+  float: left;
+  font:14px Corbel,'Segoe UI',Arial, sans-serif;
+  text-align : center;
+  margin-top : 10px;
+  height: 200px;
+  width: 274px;
+  overflow: scroll;
+  overflow: overlay; /* Google Chrome */
+ }
+
+#content #encyclo .bloc-droit .info-nutriment table {
+	margin-top : 1px;
+    border: 1px solid #A6BC2A;
+	border-collapse: collapse;
+	width: 250px;
+}
+
+#content #encyclo .bloc-droit .info-nutriment td{
+	border: 1px solid #A6BC2A;
+	text-align: center;
+	color : #000000;
+	font:12px Corbel,'Segoe UI',Arial, sans-serif;
+	list-style : none;
+}
+#content #encyclo .bloc-droit .info-nutriment .nomConstituant{
+	width: 80%;
+}
+
+#content #encyclo .bloc-droit .info-nutriment  td p{
+    display : block;
+	float : right;
+	margin-right : 5px;
+	font:14px Corbel,'Segoe UI',Arial, sans-serif;
+	font-weight : bold;
+	list-style : none;
+
+}
+
+#content #encyclo .bloc-droit .onglets-encyclo {
+	height : 30px;
+	width : 270px;
+	float : left;
+	margin-top :40px;
+	padding-left : 1%;
+
+}
+
+#content #encyclo .bloc-droit .onglets-encyclo a {
+  float : left;
+  width : 130px;
+  color :  #4D2B08;
+  margin-right : 5px;
+  font: 14px Corbel,'Segoe UI',Arial, sans-serif;
+  font-weight : bold;
+  text-align : center;
+  text-decoration: none ;
+  padding-top : 5px;
+  padding-bottom : 5px;
+  border-top: 1px solid #4D2B08;
+  border-bottom: 1px solid #4D2B08;
+}
+
+#content #encyclo .bloc-droit .onglets-encyclo a:focus {
+  font-weight : bold;
+  font-style : italic;
+}
+
+#content #encyclo .bloc-droit .onglets-encyclo2{
+	height : 30px;
+	margin-top : 130px;
+	padding-left : 5px;
+
+}
+
+#content #encyclo .bloc-droit .onglets-encyclo2 a {
+  color :  #4D2B08;
+  margin-right : 15px;
+  font: 15px Corbel,'Segoe UI',Arial, sans-serif;
+  font-weight : bold;
+  text-align : center;
+  text-decoration: none ;
+  padding-top : 5px;
+  padding-bottom : 5px;
+  border-top: 1px solid #4D2B08;
+border-bottom: 1px solid #4D2B08;
+}
+
+#content #encyclo .bloc-droit .onglets-encyclo2 a:focus {
+  font-weight : bold;
+  font-style : italic;
+}
+
+#content #encyclo .bloc-droit .repas {
+	background-color : #EAEFC9;
+    margin-top : 5px;
+    padding-left : 5px;
+	height : 30px;  
+	width : 270px;
+	float : left;
+}
+
+#content #encyclo .bloc-droit .repas  p{
+    color : #000000;
+    font: 18px Corbel,'Segoe UI',Arial, sans-serif;
+    font-weight : bold;
+    float : left;
+}
+
+#content #encyclo .bloc-droit .info-repas{
+	float : left;
+	height : 40px;  
+	width : 275px;
+}
+
+/*----------------------------
+	The Footer
+-----------------------------*/
+
+footer {
+	position: relative;
+	height: 80px;
+	margin-left: auto;
+	margin-right: auto;
+	clear: both;
+	font-size: 11px;
+	text-align: center;
+	min-width: 1080px; /* Comme le header */
+}
+
+footer  .bloc-droit{
+	background: url("../img/bar.png") repeat-x 0 -94px;
+	position: absolute;
+	height: 39px;
+	top: 10px;
+	right: 0;
+	float : left;
+	width: 285px;
+	line-height : 30px;
+	text-align: center;
+	padding-top : 5px;
+	margin-right: 50px;
+
+}
+
+footer .bloc-droit a {
+	height: 39px;
+	line-height: 37px;
+	font:16px Corbel,'Segoe UI',Arial, sans-serif;
+	color : #FFFFFF;
+}
+
+footer .bloc-droit p{
+	color:#FFFFFF;
+	line-height: 37px;
+	padding-top: 10px;
+} 
+
+footer .bloc-gauche {
+    float : left;
+	height: 39px;
+	width: 350px;
+	margin-left: 20px;
+	margin-top : 40px;
+	margin-right: 720px;
+}
+
+footer .bloc-gauche a {
+	height: 39px;
+	line-height: 37px;
+	font:16px Corbel,'Segoe UI',Arial, sans-serif;
+	color : #945906;
+}
+
+footer .bloc-gauche p{
+	margin-left:10px;
+	font:16px Corbel,'Segoe UI',Arial, sans-serif;
+	vertical-align:central;
+	color:#000000;
+}
+
+/*----------------------------
+	DropDown Menus
+-----------------------------*/
+.dropdown-first {
+	border-top: solid 1px #cccccc;
+}
+
+.dropdown-middle {
+	/* Disponible si besoin de modification */
+}
+
+.dropdown-last {
+	/* Disponible si besoin de modification */
+}
+
+#navigation li {
+	margin: 0 5px;
+	padding: 0 0;
+	float: left;
+	position: relative;
+	list-style: none;
+	background: url("../img/bar.png") repeat-x 0 -94px;
+}
+
+#navigation ul {
+	display: none;
+	margin: 0;
+	padding: 0;
+	left: -5px;
+	width: 185px;
+	position: absolute;
+	top: 35px;
+	left: 0;
+}
+
+#navigation ul li ul {
+	left: 180px;
+    top: -1px;
+}
+
+/*----------------------------
+	Suivi alimentaire
+-----------------------------*/
+.suiviresume {
+	margin-top: 15px;
+	width:1250px;
+
+}
+
+.statsresume p {
+display:block;
+width:95px;
+height:100px;
+line-height:20px;
+text-align:center;
+vertical-align:middle;
+ background-color:#F1E788;
+color:black;
+text-decoration:none;
+float:left;
+margin:0px;
+}
+
+.statsresume i.date {
+display:block;
+width:150px;
+height:50px;
+line-height:50px;
+text-align:center;
+vertical-align:middle;
+ background-color:#D0F0C0;
+color:black;
+text-decoration:none;
+float:left;
+margin:10px;
+font-size:24px;
+}
+
+.statsresume p.pluslong {
+	width:180px;
+}
+
+.statsresume p:hover {
+ background-color:#ECF245;
+}
+
+.objectifs p {
+display:block;
+width:95px;
+height:50px;
+line-height:50px;
+text-align:center;
+vertical-align:middle;
+ background-color:#D0F0C0;
+color:black;
+text-decoration:none;
+float:left;
+margin:0px;
+}
+
+.objectifs p.pluslong {
+	width:180px;
+}
+
+.consommes p {
+display:block;
+width:95px;
+height:50px;
+line-height:50px;
+text-align:center;
+vertical-align:middle;
+ background-color:#D0F0C0;
+color:black;
+text-decoration:none;
+float:left;
+margin:0px;
+}
+
+.consommes p.pluslong {
+	width:180px;
+}
+
+.reste p {
+display:block;
+width:95px;
+height:50px;
+line-height:50px;
+text-align:center;
+vertical-align:middle;
+ background-color:#D0F0C0;
+color:black;
+text-decoration:none;
+float:left;
+margin:0px;
+}
+
+.reste p.pluslong {
+	width:180px;
+}
+
+#chart1{
+	margin: 10px auto;
+	width: 400px;
+	height: 300px;
+}
+
+.conseils p {
+display:block;
+width:168px;
+height:110px;
+line-height:20px;
+text-align:center;
+vertical-align:middle;
+ background-color:#F1E788;
+ border-color:#DCDCDC #696969 #696969 #DCDCDC;
+color:black;
+text-decoration:none;
+float:left;
+margin:2px;
+}
+
+.conseils p:hover {
+ background-color:#ECF245;
+ border-color:#696969 #DCDCDC #DCDCDC #696969;
+}
+
+.conseils i.etatObjectif {
+display:block;
+width:150px;
+height:50px;
+line-height:50px;
+text-align:center;
+vertical-align:middle;
+ background-color:#D0F0C0;
+color:black;
+text-decoration:none;
+float:left;
+margin:10px;
+font-size:24px;
+}
+

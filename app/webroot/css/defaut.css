@@ -1,0 +1,647 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 15 nov. 2015, 20:52:00
+    Author     : root
+*/
+/* body {
+  background-color: #468966;
+} */
+
+
+
+
+a {
+    color: 4B77BE;
+}
+
+a:hover, a:focus {
+    color: #666666;
+}
+
+.breadcrumbs > * a {
+    color: #474747;
+}
+
+.breadcrumbs > *::before {
+    color: #666666;
+}
+.breadcrumbs > .current a {
+    text-decoration: underline;
+}
+
+
+#nomEtLogo {
+    background:#333333;
+}
+#logo {
+    height: 150px;
+    width: 200px;
+    margin-left: 8%;
+    position: relative;
+    text-align: center;
+    display:inline-block;
+}
+#logotexte {
+    display: inline-block;
+    width: 35%;
+    margin-bottom: 3%;
+    margin-top: 3%;
+    margin-left: 15%;
+    margin-right: 15%;
+}
+
+
+#nomSite {
+    font-size: 40rem;
+    text-align: center;
+    position: relative;
+    margin-left: auto;
+    display:inline-block;
+}
+
+#barreViolet {
+    color: #5B608C;
+    border: 3px solid;
+    margin-bottom: 0;
+    margin-top: 0;
+    padding-bottom: 0;
+    position: relative;
+}
+#barreBleu{
+    color: #4C8DA6;
+    border: 3px solid;
+    margin-bottom: 0;
+    margin-top: 0;
+    padding-bottom: 0;
+    position: relative;
+}
+#barreVert{
+    color: #97D17A;
+    border: 3px solid;
+    margin-bottom: 0;
+    margin-top: 0;
+    padding-bottom: 0;
+    position: relative;
+}
+#barreJaune {
+    color: #FFCE74;
+    border: 3px solid;
+    margin-bottom: 0;
+    margin-top: 0;
+    padding-bottom: 0;
+    position: relative;
+}
+#barreRouge{
+    color: #FA6E69;
+    border: 3px solid;
+    margin-bottom: 0;
+    margin-top: 0;
+    padding-bottom: 0;
+    position: relative;
+}
+
+#rechercheViolet {
+    background: #5B608C;
+}
+#rechercheBleu{
+    background: #4C8DA6;
+}
+#rechercheVert {
+    background: #97D17A;
+}
+#rechercheJaune {
+    background: #FFCE74;
+    color: #333333;
+}
+#rechercheRouge {
+    background: #FA6E69;
+}
+#rechercheErreur {
+    background: #000000;
+}
+
+
+#titreTabBar {
+    color: #FFFFFF;
+}
+#titreTabBar:hover {
+    color: #666666;
+}
+
+.right-off-canvas-toggle {
+    color: #FFFFFF;
+    right: 40%;
+    position: absolute;
+}
+.right-off-canvas-toggle:hover {
+    color: #666666;
+}
+
+.left-off-canvas-toggle:hover {
+    color: #666666;
+}
+
+.off-canvas-wrap {
+    margin-top: 0;
+    padding-top: 0;
+}
+
+.main-section {
+    margin-top: 0px;
+    padding-top: 10px;
+    color: #333;
+    background-color: #EBEBEB;
+    padding-bottom: 10px;
+}
+
+
+
+#presentation {
+  background-color: #FFFFFF;
+  color: #333333;
+  margin: 0px 50px;
+} 
+
+
+
+
+
+
+
+.title-area {
+    font-size: 4rem;
+    /*margin-left: 20rem;
+    margin-right: 20rem;*/
+    text-align: center; 
+}
+.bloc-menu {
+    text-align: center;
+}
+/* 
+   GÉNÉRIQUE NAVIGATION 
+   ==========================================================================
+*/
+.maxwidth {
+    width: 100vw;
+}
+
+
+button, .button {
+    border-width: 1px;
+    background-color: #666666;
+    border-color: #333333;
+}
+
+button:hover, button:focus, .button:hover, .button:focus {
+    background-color: #474747;
+}
+
+
+.fixed hr {
+    top: 45px;
+}
+
+.breadcrumbs { 
+    margin: 0px 50px 10px;
+    border-width: 0px;
+    background-color: #FFFFFF;
+    border-radius: 0px;
+}
+
+/*
+   TOPBAR NAVIGATION
+   ========================================================================== 
+*/
+.top-bar
+{
+    background:#666666;
+}
+.top-bar-section li:not(.has-form) a:not(.button) 
+{
+    background:#666666;  
+}
+.top-bar-section .dropdown li label 
+{
+    background: #474747;
+}
+.top-bar-section .dropdown li:not(.has-form):not(.active) > a:not(.button) 
+{
+    background: #666666;
+}
+.top-bar-section li:not(.has-form) a:hover:not(.button) 
+{ 
+    background: #474747;
+}
+.top-bar-section .dropdown li:hover:not(.has-form):not(.active) > a:not(.button) 
+{
+    background: #474747;
+}
+.top-bar-section li.hover > a:not(.button) 
+{
+    background: #474747;
+}
+.top-bar-section .has-form 
+{
+    background: #666666;
+}
+.top-bar-section ul li 
+{
+    background: #666666;
+}
+.top-bar-section .dropdown li a 
+{
+    background: #474747;
+}
+.top-bar input, .top-bar select, .top-bar .button, .top-bar button {
+    border-style: solid;
+    border-color: #474747;
+    border-width: 1px;
+}
+
+.top-bar-section > ul > .divider, .top-bar-section > ul > [role="separator"] {
+    border-right: 1px solid #474747;
+}
+/*
+.top-bar-section li:not(.has-form) a:hover:not(.button) {
+     background: #474747;
+}
+
+.top-bar-section .dropdown li:hover:not(.has-form):not(.active) > a:not(.button) {
+    color: #FFFFFF;
+    background: #474747 none repeat scroll 0% 0%;
+}
+*/
+
+
+/*
+   TABBAR NAVIGATION
+   ========================================================================== 
+*/
+.tab-bar {
+    background: #333333;
+}
+
+.left-off-canvas-menu {
+    background: #666666;
+}
+
+.right-off-canvas-menu {
+    background: #666666;
+}
+
+ul.off-canvas-list li label {
+    background: #474747;
+}
+
+ul.off-canvas-list li a {
+    border-bottom: 1px solid #474747;
+}
+
+ul.off-canvas-list li a:hover {
+    background: #474747;
+}
+
+.left-small {
+    border-right: 1px solid #666666;
+}
+
+.left-submenu {
+    background: #666666;
+}
+    
+.left-submenu .back > a {
+    background: #474747;
+}
+
+.right-small {
+    border-left: 1px solid #666666;
+}
+.right-submenu {
+    background: #666666;
+}
+    
+.right-submenu .back > a {
+    background: #474747;
+}
+
+    
+.breadcrumbs {
+    margin-top: 0;
+    position: relative;
+}
+
+/*
+   IMAGE
+   ========================================================================== 
+*/
+.image-wrapper {
+    width: 100%;
+    height: 100%;
+    border: 1px solid rgba(0, 0, 0, 0.04);
+    overflow: hidden;
+    position: relative;
+    opacity:1;
+    text-align: center;
+    
+}
+.image-overlay-content {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    overflow: hidden;
+    top: 0;
+    left: 0; 
+}
+.overlay-fade-in h2 {
+    color: #f2f2f2;
+    font-size: 1.8rem;
+    margin-top: 40%;
+    margin-bottom:0;
+    padding-bottom:5px;
+    opacity: 1;
+    transition: all 0.2s ease-in-out;
+    background: rgba(0, 0, 0, 0.7); 
+}
+.overlay-fade-in p {
+    letter-spacing: 0.15em;
+    color: #f4f4f4;
+    font-size: 0.8rem;
+    font-style: italic;
+    opacity: 0;
+    height:100%;
+    padding-left:2px;
+    padding-right:2px;
+    transition: all 0.2s linear; 
+    background: rgba(0, 0, 0, 0.7); 
+}
+.overlay-fade-in img {
+    transition: all 0.2s linear; 
+}
+.overlay-fade-in a {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+.overlay-fade-in .image-overlay-content {
+    opacity: 1;
+    transition: all 0.4s ease-in-out; 
+}
+
+.image-overlay-content:hover { 
+    background-color: rgba(0, 0, 0, 0.4);
+}
+.overlay-fade-in:hover .image-overlay-content {
+    opacity: 1; 
+}
+.overlay-fade-in:hover h2, .overlay-fade-in p {
+    opacity: 1; 
+}
+.overlay-fade-in:hover p {
+    transition-delay: 0.1s; 
+}
+
+
+/*
+   SLIDER
+   ========================================================================== 
+*/
+.main-slider-content {
+    text-align:center;
+}
+.main-slider-content img {
+display: block;
+margin: auto;
+
+}
+ .texte-description-slider {
+   width:100%;
+   }
+   .texte-description-slider, .main-slider-content img {
+    /* va faire la hauteur du slider */
+    height: 26vw;
+
+}
+.slick-prev:before, .slick-next:before {
+    font-size: 35px;
+    color: black !important;
+
+}
+.texte-description-slider {
+    overflow: hidden;
+    -o-text-overflow: ellipsis; /* pour Opera 9 */
+    text-overflow: ellipsis; /* pour le reste du monde */
+}
+
+/*
+   FOOTER
+   ========================================================================== 
+*/
+.row {
+    max-width: 1200px; }
+
+.footer {
+    background-color: #333333;
+    text-align: center;
+    font-size: 1.2rem;
+    padding: 4rem; 
+}
+.footer .inline-list a {
+    display: inline-block;
+    width: 2rem;
+    height: 2rem;
+    background-color: #474747;
+    border-radius: 2px;
+    font-size: 1.5rem;
+    color: #fff;
+    text-align: center;
+    line-height: 35px;
+    margin: 0 3px 0 0; }
+.footer .contact {
+    list-style-type: none;
+    margin: 0;
+    text-align: left;
+    color: #fff; }
+.footer .contact li {
+    margin-bottom: 2rem; }
+.footer .contact li p {
+    padding-left: 5rem; }
+.footer .contact i {
+    position: absolute;
+    background-color: #474747;
+    color: #fff;
+    font-size: 2rem;
+    border-radius: 50%;
+    line-height: 1;
+    margin: 0 0 0 -4rem;
+    vertical-align: middle;
+    padding: .25em .45em; }
+.footer .copywrite {
+    color: #666666;
+    font-size: 0.875rem;
+    margin: 0 0 1rem 0; }
+.footer .about {
+    color: #666666;
+    font-size: 0.875rem;
+    margin: 0 0 1rem 0; }
+.footer .footer-links a {
+    list-style: none;
+    font-weight: normal;
+    color: #fff;
+    margin: 0;
+    font-size: 0.875rem; }
+.footer .footer-links a::after {
+    content: "•";
+    padding: 0 0.2rem 0 0.4rem; }
+.footer .footer-links a:last-child::after {
+    content: "";
+    padding: 0 0.4rem 0 0.8rem; }
+
+@media only screen and (min-width: 40.063em) {
+    .footer p {
+        text-align: left; }
+    .footer .social {
+        text-align: left;
+        margin: 0; }
+    .footer .contact {
+        text-align: left; }
+    .footer .contact > i {
+        margin-right: 1rem; } }
+
+.logo {
+    color: #fff;
+    font-size: 1.5rem; }
+.logo i {
+    margin-right: 0.5rem; }
+
+/*
+   TABLE AVEC SCROLL
+   ========================================================================== 
+*/
+
+.scrollingtable {
+    box-sizing: border-box;
+    display: inline-block;
+    vertical-align: middle;
+    overflow: hidden;
+    width: auto; /*if you want a fixed width, set it here, else set to auto*/
+    min-width: 0/*100%*/; /*if you want a % width, set it here, else set to 0*/
+    height: 400px/*100%*/; /*set table height here; can be fixed value or %*/
+    min-height: 0/*104px*/; /*if using % height, make this large enough to fit scrollbar arrows + caption + thead*/
+    line-height: 20px;
+    padding: 20px 0 20px 0; /*need enough padding to make room for caption*/
+    text-align: left;
+}
+.scrollingtable * {box-sizing: border-box;}
+.scrollingtable > div {
+    position: relative;
+    border-top: 1px solid black;
+    height: 100%;
+    padding-top: 20px; /*this determines column header height*/
+}
+.scrollingtable > div:before {
+    top: 0;
+    background: cornflowerblue; /*header row background color*/
+}
+.scrollingtable > div:before,
+.scrollingtable > div > div:after {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    left: 0;
+}
+.scrollingtable > div > div {
+    min-height: 0/*43px*/; /*if using % height, make this large enough to fit scrollbar arrows*/
+    max-height: 100%;
+    overflow: scroll/*auto*/; /*set to auto if using fixed or % width; else scroll*/
+    overflow-x: hidden;
+    border: 1px solid black; /*border around table body*/
+}
+.scrollingtable > div > div:after {background: white;} /*match page background color*/
+.scrollingtable > div > div > table {
+    width: 100%;
+    border-spacing: 0;
+    margin-top: -20px; /*inverse of column header height*/
+    /*margin-right: 17px;*/ /*uncomment if using % width*/
+}
+.scrollingtable > div > div > table > caption {
+    position: absolute;
+    top: -20px; /*inverse of caption height*/
+    margin-top: -1px; /*inverse of border-width*/
+    width: 100%;
+    font-weight: bold;
+    text-align: center;
+}
+.scrollingtable > div > div > table > * > tr > * {padding: 0;}
+.scrollingtable > div > div > table > thead {
+    vertical-align: bottom;
+    white-space: nowrap;
+    text-align: center;
+}
+.scrollingtable > div > div > table > thead > tr > * > div {
+    display: inline-block;
+    padding: 0 6px 0 6px; /*header cell padding*/
+}
+.scrollingtable > div > div > table > thead > tr > :first-child:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 20px; /*match column header height*/
+    border-left: 1px solid black; /*leftmost header border*/
+}
+.scrollingtable > div > div > table > thead > tr > * > div[label]:before,
+.scrollingtable > div > div > table > thead > tr > * > div > div:first-child,
+.scrollingtable > div > div > table > thead > tr > * + :before {
+    position: absolute;
+    top: 0;
+    white-space: pre-wrap;
+    color: white; /*header row font color*/
+}
+.scrollingtable > div > div > table > thead > tr > * > div[label]:before,
+.scrollingtable > div > div > table > thead > tr > * > div[label]:after {content: attr(label);}
+.scrollingtable > div > div > table > thead > tr > * + :before {
+    content: "";
+    display: block;
+    min-height: 20px; /*match column header height*/
+    padding-top: 1px;
+    border-left: 1px solid black; /*borders between header cells*/
+}
+.scrollingtable .scrollbarhead {float: right;}
+.scrollingtable .scrollbarhead:before {
+    position: absolute;
+    width: 100px;
+    top: -1px; /*inverse border-width*/
+    background: white; /*match page background color*/
+}
+.scrollingtable > div > div > table > tbody > tr:after {
+    content: "";
+    display: table-cell;
+    position: relative;
+    padding: 0;
+    border-top: 1px solid black;
+    top: -1px; /*inverse of border width*/
+}
+.scrollingtable > div > div > table > tbody {vertical-align: top;}
+.scrollingtable > div > div > table > tbody > tr {background: white;}
+.scrollingtable > div > div > table > tbody > tr > * {
+    border-bottom: 1px solid black;
+    padding: 0 6px 0 6px;
+    height: 20px; /*match column header height*/
+}
+.scrollingtable > div > div > table > tbody:last-of-type > tr:last-child > * {border-bottom: none;}
+.scrollingtable > div > div > table > tbody > tr:nth-child(even) {background: gainsboro;} /*alternate row color*/
+.scrollingtable > div > div > table > tbody > tr > * + * {border-left: 1px solid black;} /*borders between body cells*/
+
+.fieldsetscrollbar{
+    overflow-y: scroll;
+    width: auto; 
+    min-width: 0;
+    height: 400px;
+    min-height: 0;
+}

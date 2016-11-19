@@ -1,0 +1,11 @@
+{
+    "name": "vendor/mapy-local",
+    "description": "Description of project mapy_local.",
+    "authors": [
+        {
+            "name": "root",
+            "email": "your@email.here"
+        }
+    ],
+    "require": {}
+}

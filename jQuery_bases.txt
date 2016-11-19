@@ -1,0 +1,26 @@
+ Code jQuery de base
+
+jQuery(document).ready(function () {
+        /** Création du listener - ici dès que la balise #idELementAverif sera modifié(change) */
+        jQuery('#idELementAverif').on('change', function (e) {
+            e.preventDefault(); // Empeche de soumettre le formulaire
+            var form = jQuery(this); // L'objet jQuery du formulaire (#idELementAverif)
+            var name = jQuery("#nomType").val();
+            jQuery('#ajout-result').empty();  // affichage du résultat
+            if (name === "") {
+                jQuery('#ajout-result').append("Les champs doivent être remplis");
+            } else {
+                // Envoi de la requête HTTP en mode asynchrone
+                jQuery.ajax({
+                    url: form.attr('action'), // cible (formulaire)
+                    type: form.attr('method'), // méthode (formulaire)
+                    data: form.serialize(), // Envoie de toutes les données
+                    success: function (html) { // Récupération de la réponse
+                        jQuery('#ajout-result').append(html);  // affichage du résultat
+                        // reset le formulaire 
+                    }
+                });
+                // ajout d'un appendl
+            }
+        });
+    });

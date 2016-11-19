@@ -1,0 +1,287 @@
+<?php
+require_once ("model/encyclopedie.php");
+
+    /* Résultats de la recherche du 1er aliment */
+	function resultatsRecherche1() {
+		if (!empty ($_POST['zone-aliment'])) {
+			$aRechercher = $_POST['zone-aliment'];
+			$resultats = getAliments($aRechercher); 
+			if (sizeof($resultats) >= 1) {
+				$i = 0;
+				echo "<ul>";
+				foreach ($resultats as $resultat) {
+					$url = "?page=encyclo-aliment1&valeur1=".$resultats[$i]['numAliment'];
+					echo "<li><a href=\"".$url."\">".$resultats[$i]['nomFR']."</a></li>";
+					$i++;
+				}
+				echo "</ul>";
+			} else {
+				echo "Aucun résultat ne correspond à votre recherche";
+			}
+		} else {
+			echo "Veuillez saisir le nom de l'aliment à rechercher";
+		}
+	}
+	
+    /* Résultats de la recherche du 2nd aliment */
+	function resultatsRecherche2() {
+    	if (!empty ($_POST['zone-aliment'])) {
+			$aRechercher = $_POST['zone-aliment'];
+			$resultats = getAliments($aRechercher); 
+			if (sizeof($resultats) >= 1) {
+				$i = 0;
+				echo "<ul>";
+				foreach ($resultats as $resultat) {
+					$url = "?page=encyclo-aliment2&valeur1=".$_GET['valeur1']."&valeur2=".$resultats[$i]['numAliment'];
+					echo "<li><a href=\"".$url."\">".$resultats[$i]['nomFR']."</a></li>";
+					$i++;
+				}
+				echo "</ul>";
+			} else {
+				echo "Aucun résultat ne correspond à votre recherche";
+			}
+		} else {
+				echo "Veuillez saisir le nom de l'aliment à rechercher";
+		}
+    }
+	
+
+	
+    /* Principaux composants d'un aliment (1ere case) */
+	function principauxConstituants ($aliment) {
+		$energie 	= getEnergieAliment($aliment);
+		$lipide 	= getLipidesAliment($aliment);
+		$glucide 	=  getGlucidesAliment($aliment);
+		$ag 		= getAGSAliment($aliment);
+		$sodium		= getSodiumAliment($aliment);
+		
+		// Récupération de la quantité		
+		if (isset ($_POST['valider'])) {
+			$quantite = $_POST['quantite'];
+			$portion = $_POST['portion'];
+		} else {
+		    $quantite = 1;
+			$portion = "moyen(ne)";
+		}
+		
+		$almt = getAliment($aliment);
+		
+		// Affectaion de la portion correspondante en grammes
+		if ($portion == "petit(e)") {
+		    $portion = $almt['quantitePetitePortion'];
+		} else if($portion == "moyen(ne)") {
+			$portion = $almt['quantiteMoyennePortion'];
+		} else {
+			$portion = $almt['quantiteGrandePortion'];
+		}
+		
+		// Affichage des constituants
+		echo "<ul>";
+		if ($energie != null){		
+			echo "<li>Energie <p> ".($energie['valeurMoy']*$quantite*$portion)/100 ." </p></li>";
+		} else {
+				echo "<li>Energie <p> 0 </p></li>";
+		}
+		
+		if ($lipide != null) {
+			echo "<li>Matieres grasses  <p>".($lipide['valeurMoy']*$quantite*$portion)/100 ."/100cal </p></li>"; 
+		} else {
+			echo "<li>Matieres grasses  <p>0 cal </p> </li>"; 
+		}
+		
+		if ($glucide != null) {
+			echo "<li>Sucres ajoutés <p>".($glucide['valeurMoy']*$quantite*$portion)/100 ." cal </p> </li>";
+		} else {
+			echo "<li>Sucres ajoutés <p>0 cal </p></li>";
+		}
+		
+		if ($ag != null) {
+			echo "<li>Graisses saturées  <p> ".($ag['valeurMoy']*$quantite*$portion)/100 ." g </p></li>";
+		} else {
+			echo "<li>Graisses saturées <p>0 g </p></li>";
+		}
+		
+		if ($sodium != null) {
+			echo "<li>Sodium &nbsp <p>".($sodium['valeurMoy']*$quantite*$portion)/100 ." mg </p></li>";
+		} else {
+			echo "<li>Sodium &nbsp <p> 0 mg </p></li>";
+		}
+		
+		echo "</ul>";
+	}
+	
+    /* Principaux composants d'un aliment (2eme case) */
+	function principauxConstituants2($aliment) {
+		$energie 	= getEnergieAliment($aliment);
+		$lipide 	= getLipidesAliment($aliment);
+		$glucide 	=  getGlucidesAliment($aliment);
+		$ag 		= getAGSAliment($aliment);
+		$sodium		= getSodiumAliment($aliment);
+		
+		// Récupération de la quantité		
+		if (isset ($_POST['valider2'])) {
+			$quantite = $_POST['quantite2'];
+			$portion = $_POST['portion2'];
+		} else {
+		    $quantite = 1;
+			$portion = "moyen(ne)";
+		}
+		
+		$almt = getAliment($aliment);
+		
+		// Affectaion de la portion correspondante en grammes
+		if ($portion == "petit(e)") {
+		    $portion = $almt['quantitePetitePortion'];
+		} else if($portion == "moyen(ne)") {
+			$portion = $almt['quantiteMoyennePortion'];
+		} else {
+			$portion = $almt['quantiteGrandePortion'];
+		}
+		
+		// Affichage des constituants
+		echo "<ul>";
+		if ($energie != null){		
+			echo "<li>Energie <p> ".($energie['valeurMoy']*$quantite*$portion)/100 ." </p></li>";
+		} else {
+				echo "<li>Energie <p> 0 </p></li>";
+		}
+		
+		if ($lipide != null) {
+			echo "<li>Matieres grasses  <p>".($lipide['valeurMoy']*$quantite*$portion)/100 ."/100cal </p></li>"; 
+		} else {
+			echo "<li>Matieres grasses  <p>0 cal </p> </li>"; 
+		}
+		
+		if ($glucide != null) {
+			echo "<li>Sucres ajoutés <p>".($glucide['valeurMoy']*$quantite*$portion)/100 ." cal </p> </li>";
+		} else {
+			echo "<li>Sucres ajoutés <p>0 cal </p></li>";
+		}
+		
+		if ($ag != null) {
+			echo "<li>Graisses saturées  <p> ".($ag['valeurMoy']*$quantite*$portion)/100 ." g </p></li>";
+		} else {
+			echo "<li>Graisses saturées <p>0 g </p></li>";
+		}
+		
+		if ($sodium != null) {
+			echo "<li>Sodium &nbsp <p>".($sodium['valeurMoy']*$quantite*$portion)/100 ." mg </p></li>";
+		} else {
+			echo "<li>Sodium &nbsp <p> 0 mg </p></li>";
+		}
+		
+		echo "</ul>";
+	}
+	
+	/* Tous les composants d'un aliment (1ere case) */
+	function tousLesCompos($aliment) {
+	    $compo = getCompoAliment($aliment);
+		
+		// Récupération de la quantité		
+		if (isset ($_POST['valider'])) {
+			$quantite = $_POST['quantite'];
+			$portion = $_POST['portion'];
+		} else {
+		    $quantite = 1;
+			$portion = "moyen(ne)";
+		}
+		
+		$almt = getAliment($aliment);
+		
+		// Affectaion de la portion correspondante en grammes
+		if ($portion == "petit(e)") {
+		    $portion = $almt['quantitePetitePortion'];
+		} else if($portion == "moyen(ne)") {
+			$portion = $almt['quantiteMoyennePortion'];
+		} else {
+			$portion = $almt['quantiteGrandePortion'];
+		}
+		
+	
+		
+		if ($compo != null) {
+			echo "<table>";
+			$i = 0;
+			foreach ($compo as $composant) {
+				echo "<tr><td>".$compo[$i]['specFR']."</td>";
+				echo "<td><p>".($compo[$i]['valeurMoy']*$quantite*$portion)/100 ."</p></td></tr>";
+				$i++;
+			}
+			echo "</table>";
+		} else {
+		    echo "Informations nutritionnelles non disponibles";
+		}
+	}
+	
+    /*  Tous les composants d'un aliment (2eme case) */
+	function tousLesCompos2($aliment) {
+	    $compo = getCompoAliment($aliment);
+		
+				// Récupération de la quantité		
+		if (isset ($_POST['valider2'])) {
+			$quantite = $_POST['quantite2'];
+			$portion = $_POST['portion2'];
+		} else {
+		    $quantite = 1;
+			$portion = "moyen(ne)";
+		}
+		
+		$almt = getAliment($aliment);
+		
+		// Affectaion de la portion correspondante en grammes
+		if ($portion == "petit(e)") {
+		    $portion = $almt['quantitePetitePortion'];
+		} else if($portion == "moyen(ne)") {
+			$portion = $almt['quantiteMoyennePortion'];
+		} else {
+			$portion = $almt['quantiteGrandePortion'];
+		}
+		
+		
+		if ($compo != null) {
+			echo "<table>";
+			$i = 0;
+			foreach ($compo as $composant) {
+				echo "<tr><td>".$compo[$i]['specFR']."</td>";
+				echo "<td><p>".($compo[$i]['valeurMoy']*$quantite*$portion)/100 ."</p></td></tr>";
+				$i++;
+			}
+			echo "</table>";
+		} else {
+		    echo "Informations nutritionnelles non disponibles";
+		}
+	}
+	
+	/* Permet de laisser afficher le choix dans la liste déroulante (1ere case) */
+	function choixListeQuantite() {
+		
+		if (isset ($_POST['valider'])) {
+			echo " <option value=\"".$_POST['quantite']."\" selected=\"selected\">".$_POST['quantite']."</option>";
+		}
+	}
+	
+		
+	/* Permet de laisser afficher le choix dans la liste déroulante (2eme case) */
+	function choixListeQuantite2() {
+		
+		if (isset ($_POST['valider2'])) {
+			echo " <option value=\"".$_POST['quantite2']."\" selected=\"selected\">".$_POST['quantite2']."</option>";
+		}
+	}
+	
+		/* Permet de laisser afficher le choix dans la liste déroulante (2eme case) */
+	function choixListePortion($type) {
+		
+		if (isset ($_POST['valider'])) {
+			echo " <option value=\"".$_POST['portion']."\" selected=\"selected\">".$type." -".$_POST['portion']."-</option>";
+		}
+	}
+	
+	/* Permet de laisser afficher le choix dans la liste déroulante (2eme case) */
+	function choixListePortion2($type) {
+		
+		if (isset ($_POST['valider2'])) {
+			echo " <option value=\"".$_POST['portion2']."\" selected=\"selected\">".$type." -".$_POST['portion2']."-</option>";
+		}
+	}
+		
