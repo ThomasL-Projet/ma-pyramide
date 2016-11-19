@@ -1,6 +1,7 @@
-<<<<<<< HEAD
 CakePHP
 =======
+
+![Cake Power](https://media1.giphy.com/media/3o6UBpHgaXFDNAuttm/200_s.gif)
 
 [![CakePHP](http://cakephp.org/img/cake-logo.png)](http://www.cakephp.org)
 
@@ -36,8 +37,6 @@ Get Support!
 [Lighthouse](http://cakephp.lighthouseapp.com/) - Got issues? Please tell us!
 
 [![Bake Status](https://secure.travis-ci.org/cakephp/cakephp.png?branch=master)](http://travis-ci.org/cakephp/cakephp)
-
-![Cake Power](https://media1.giphy.com/media/3o6UBpHgaXFDNAuttm/200_s.gif)
 =======
 # mapyramide
 >>>>>>> origin/master
